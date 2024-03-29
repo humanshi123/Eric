@@ -12,15 +12,16 @@ export default function LandingPage() {
     <div className="flex flex-col bg-transparent">
       <div className="flex flex-col justify-center items-center h-screen bg-[#CECECC] px-6 md:px-12">
         <img src={logo} className="w-3/4 max-w-[500px] h-auto" alt="logo" />
-        <h1 className="text-3xl md:text-[40px] tracking-[10px] uppercase text-[red]  md:mt-[50px] ">
+        <h1 className="text-3xl md:text-[40px] tracking-[10px] uppercase text-white  md:mt-[50px] ">
           Seleccione un pais
         </h1>
+        {/* <p className="paragraph">                  å            </p> */}
         <div className="flex flex-wrap justify-center items-center my-8 w-full">
-          <CountryLink flag={mexicoFlag} name="México" />
-          <CountryLink flag={colombiaFlag} name="Colombia" />
-          <CountryLink flag={costaricaFlag} name="Costa Rica" />
-          <CountryLink flag={panamaFlag} name="Panamá" />
-          <CountryLink flag={venezuelaFlag} name="Venezuela" />
+          <CountryLink flag={mexicoFlag} name="MÉXICO" />
+          <CountryLink flag={colombiaFlag} name="COMBIA" />
+          <CountryLink flag={costaricaFlag} name="COSTA RICÀ" />
+          <CountryLink flag={panamaFlag} name="" />
+          <CountryLink flag={venezuelaFlag} name="VENUA" />
           {/* <CountryLink flag={argentinaFlag} name="Argentina" /> */}
           
         </div>
@@ -37,9 +38,11 @@ const CountryLink = ({ flag, name }) => (
         src={flag}
         alt={`${name} flag`}
       />
-      <p className="paragraph uppercase mt-3 py-1 px-2 text-[#323233] text-[20px]">
+      <p className="paragraph mt-3 py-1 px-2 text-[#323233] text-[20px]">
         {name}
+        
       </p>
+      
     </Link>
   </div>
 );
