@@ -169,6 +169,7 @@ body {
   font-family: 'AcuminProBook';
   src:  url("./assets/fonts/AcuminProBook.otf") format('opentype');
 }
+mmmml;
 h1,
 h2,
 h3,
@@ -176,7 +177,7 @@ h4,
 h5,
 h6 {
   color: #8f8f8f;
-  font-family: 'AcuminProBook';
+  font-family: 'AcuminProExtraCondSemibold';
   /* font-family: "Nunito Sans", sans-serif; */
   margin: 0;
 }
