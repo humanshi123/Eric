@@ -40,34 +40,34 @@ const Acercade = () => {
 
   const files = [
     {
-      name: "PREGUNTAS FRECUENTES Y RESPUESTAS CON CITAS (PDF)",
+      name: "PREGUNTAS FRECUENTES Y RESPUESTAS CON CITAS",
       file: LaManita,
     },
     {
-      name: "PROTOCOLO DE MICRODÓSIS DE PAUL STAMETS (PDF)",
+      name: "PROTOCOLO DE MICRODÓSIS DE PAUL STAMETS",
       file: protocol,
     },
     {
-      name: "CITED FAQ ABOUT PSILOCYBIN (PDF)",
+      name: "CITED FAQ ABOUT PSILOCYBIN",
       file: cited,
     },
     {
-      name: "La Manita Protocolo Stamets (PDF)",
+      name: "La Manita Protocolo Stamets",
       file: pdf1,
     },
   ];
   return (
-    <div className="flex justify-center gap-20 p-10">
-      <div className="flex justify-center  flex-col w-[600px] gap-10 md:gap-10">
-        <div className="flex justify-center">
-          <h1 className="text-[50px] border-2 border-black p-1">
-            <span className="uppercase">
-              Acer<span className="text-gray-200">ca</span>
-            </span>{" "}
-            de
+    <div className="flex justify-center px-10 pt-[80px] pb-[150px]">
+      <div className="left-column-1 flex justify-center flex-col">
+        <div className="flex mb-[90px]">
+          <h1 className="font-[SunrollBold] text-[68px] text-[#323233]">
+            ACER
+         <span className="text-gray-200"></span>
+            {" "}
+            
           </h1>
         </div>
-        <p className="text-lg font-semibold">
+        <p className="font-[AcuminProBook] text-[22px] text-[#000] font-semibold">
           Históricamente se ha comprobado que los hongos mágicos (Psilocibe
           Cubensis) son responsables por varios avances mentales de nuestra
           especie. Ahora, científicamente se está comprobando la efectividad de
@@ -75,22 +75,24 @@ const Acercade = () => {
           ansiedad y anti-sociabilidad, entre otras. ¡Sane el pasado y retome su
           esencia!
         </p>
-        <div className="gap-5 grid">
-          <div className="flex flex-col gap-5 font-semibold">
+        <div className="gap-5 grid mt-[30px]">
+          <div className="flex flex-col gap-3 font-semibold">
             {files.map((file, index) => (
               <DownloadItem title={file.name} file={file.file} key={index} />
             ))}
           </div>
           <div className="">
             <div className=" text-center cursor-pointer"  onClick={()=> setShowOverlay(true)}>
-              <p className="bg-black py-2 px-5 text-white">
+              <p className="bg-[#323233] py-2 px-5 max-w-[500px] text-white">
                 REPRODUCE EL VIDEO E INFÓRMATE
               </p>
             </div>
           </div>
         </div>
       </div>
-      <img src={MicBox} alt="" className="hidden md:block w-[300px]" />
+      <div className="right-column-1">
+      <img src={MicBox} alt="" className="hidden md:block w-full" />
+      </div>
 
       {/* overlay section with video tag  */}
    {   
@@ -122,13 +124,14 @@ const Acercade = () => {
 const DownloadItem = ({ title, file }) => (
   <a
     href={file}
-    className="flex text-gray-400 gap-10 items-center"
+    className="flex text-[#000] items-center"
     download // Add download attribute to make the link downloadable
   >
-    <span className="">
+    <span className="text-[#CECECC] pr-[20px]">
       <FaDownload />
     </span>
     {title}
+    <span className="text-[#CECECC] pl-[20px]"> (PDF) </span>
   </a>
 );
 

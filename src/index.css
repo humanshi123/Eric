@@ -5352,3 +5352,10 @@ textarea:focus {
   font-family: "Claston";
   src: url("./assets/fonts/Claston.otf") format("opentype");
 }
+/* -------Custom CSS--------  */
+.left-column-1 {
+ width: 80%;
+}
+.right-column-1 {
+  width: calc(20% + 150px);
+}

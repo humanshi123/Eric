@@ -53,11 +53,11 @@ const HeroSection = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
           }}
-          className="w-full md:w-[50%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative"
+          className="w-full md:w-[55%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative"
         >
           <div className="flex flex-col md:pt-[200px] items-center p-8 md:p-16">
-            <h2 className="uppercase text-white text-3xl md:text-5xl z-10 bg-[#f4cec9] py-2 px-4">
-              Ma<span className="text-black">cro</span>
+            <h2 className="font-[SunrollBold] text-white text-[3xl] md:text-[68px] z-10 py-2 px-4">
+              MA<span className="text-black">CR</span>
             </h2>
             <img
               src={macroImages[currentMacroIndex]}
@@ -74,7 +74,7 @@ const HeroSection = () => {
             backgroundSize: "contain",
             backgroundPositionY: "bottom",
           }}
-          className="w-full md:w-[50%] bg-[#323232] bg-cover bg-center relative"
+          className="w-full md:w-[45%] bg-[#323232] bg-cover bg-center relative"
         >
           <div className="flex flex-col justify-center  items-center p-8 md:p-16">
             <img
@@ -83,8 +83,8 @@ const HeroSection = () => {
               alt="right product image"
               onClick={() => setOverlayImage(microImages[currentMacroIndex])}
             />
-            <h2 className="uppercase text-white text-3xl z-10 md:text-5xl bg-red-100 py-2 px-4 mt-8">
-              Mi<span className="text-gray-300">cro</span>
+            <h2 className="font-[SunrollBold] text-white text-3xl z-10 md:text-[68px]  py-2 px-4 mt-8">
+              MI<span className="text-gray-300">CR</span>
             </h2>
           </div>
         </div>
