@@ -46,7 +46,7 @@ const HeroSection = () => {
 
   return (
     <div className="w-full">
-      <div className="flex flex-col h-[100vh] md:flex-row">
+      <div className="flex flex-col  md:flex-row">
         <div
           style={{
             backgroundImage: `url(${leftHorse})`,
@@ -59,6 +59,7 @@ const HeroSection = () => {
             <h2 className="font-[SunrollBold] text-white text-[3xl] md:text-[68px] z-10 py-2 px-4">
               MA<span className="text-black">CR</span>
             </h2>
+            <p className="font-[AcuminProExtraCondSemibold] text-[#323233] text-[30px] mt-[30px]">EL MEJOR VIAJE DE TU VIDA</p>
             <img
               src={macroImages[currentMacroIndex]}
               className="w-full md:max-w-lg mt-8"
@@ -83,9 +84,10 @@ const HeroSection = () => {
               alt="right product image"
               onClick={() => setOverlayImage(microImages[currentMacroIndex])}
             />
-            <h2 className="font-[SunrollBold] text-white text-3xl z-10 md:text-[68px]  py-2 px-4 mt-8">
+            <h2 className="font-[SunrollBold] text-white z-10 md:text-[68px] mt-[30px] mt-8">
               MI<span className="text-gray-300">CR</span>
             </h2>
+            <p className="font-[AcuminProExtraCondSemibold] text-[#CECECC] text-[30px] mt-[50px]">RESTAURA TU MEJOR YO</p>
           </div>
         </div>
       </div>

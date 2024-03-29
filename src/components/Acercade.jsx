@@ -57,7 +57,7 @@ const Acercade = () => {
     },
   ];
   return (
-    <div className="flex justify-center px-10 pt-[80px] pb-[150px]">
+    <div className="pdf-section-grid grid px-10 pt-[80px] pb-[150px]">
       <div className="left-column-1 flex justify-center flex-col">
         <div className="flex mb-[90px]">
           <h1 className="font-[SunrollBold] text-[68px] text-[#323233]">

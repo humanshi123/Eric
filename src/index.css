@@ -5354,8 +5354,11 @@ textarea:focus {
 }
 /* -------Custom CSS--------  */
 .left-column-1 {
- width: 80%;
+ width: calc(70% + 250px);
+}
+.pdf-section-grid {
+  grid-template-columns: 2fr 1fr;
 }
 .right-column-1 {
-  width: calc(20% + 150px);
+  width: 30%;
 }
