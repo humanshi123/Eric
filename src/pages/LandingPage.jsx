@@ -12,7 +12,7 @@ export default function LandingPage() {
     <div className="flex flex-col bg-transparent">
       <div className="flex flex-col justify-center items-center h-screen bg-[#CECECC] px-6 md:px-12">
         <img src={logo} className="w-3/4 max-w-[500px] h-auto" alt="logo" />
-        <h1 className="text-3xl md:text-[40px] tracking-[10px] uppercase text-red  md:mt-[50px] ">
+        <h1 className="text-3xl md:text-[40px] tracking-[10px] uppercase text-[red]  md:mt-[50px] ">
           Seleccione un pais
         </h1>
         <div className="flex flex-wrap justify-center items-center my-8 w-full">
