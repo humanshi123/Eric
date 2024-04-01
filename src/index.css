@@ -158,6 +158,10 @@ body {
   font-size: 16px;
 }
 @font-face {
+  font-family: 'AcuminProSemibold';
+  src:  url("./assets/fonts/AcuminProSemibold.otf") format('opentype');
+}
+@font-face {
   font-family: 'AcuminProCondLight';
   src:  url("./assets/fonts/AcuminProCondLight.otf") format('opentype');
 }
@@ -176,7 +180,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #8f8f8f;
+  color: #323233;
   font-family: 'AcuminProExtraCondSemibold';
   /* font-family: "Nunito Sans", sans-serif; */
   margin: 0;
@@ -5353,12 +5357,7 @@ textarea:focus {
   src: url("./assets/fonts/Claston.otf") format("opentype");
 }
 /* -------Custom CSS--------  */
-.left-column-1 {
- width: calc(70% + 250px);
-}
-.pdf-section-grid {
-  grid-template-columns: 2fr 1fr;
-}
+
 .right-column-1 {
-  width: 30%;
+  transform: translate(-40%, -10%);
 }

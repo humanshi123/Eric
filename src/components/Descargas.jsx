@@ -48,11 +48,9 @@ const Descargas = () => {
   return (
     <div className="grid gap-10 text-white p-10 md:p-20 bg-[#333]">
       <div className="flex justify-center">
-        <h1 className="text-4xl md:text-6xl p-1">
-          <span className="">
-            DES<span className="text-gray-400">CA</span>
-          </span>
-          RGAS
+        <h1 className="font-[SunrollBold] leading-[80px] tracking-[1px] text-4xl text-[#fff] md:text-6xl p-1">        
+            D<span className="text-[#CECECC]"></span>       
+          RAS
         </h1>
       </div>
       <div className="flex flex-col justify-center items-center gap-7 font-semibold">

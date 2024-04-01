@@ -23,12 +23,12 @@ export default function Distrubudors() {
 
         <div></div>
         <div className="flex-center flex-col gap-20">
-          <ul className="flex flex-wrap items-center justify-center gap-4 sm:gap-16 text-[20px]  ">
+          <ul className="font-[SunrollBold] flex flex-wrap items-center justify-center gap-4 sm:gap-16 text-[20px]  ">
             <li>MÉXICO</li>
-            <li>COLOMBIA</li>
-            <li>COSTA RICA</li>
-            <li>PANAMA</li>
-            <li>VENEZUELA</li>
+            <li>COMBIA</li>
+            <li>COSTA RICÀ</li>
+            <li></li>
+            <li>VENUA</li>
           </ul>
           <div className="flex-center flex-col gap-10">
             <h1 className="text-center text-[24px]">CIUDAD DE MEXICO</h1>

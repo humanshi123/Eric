@@ -23,7 +23,7 @@ const Ilustraciones = () => {
   return (
     <div>
       <div className="bg-[#ccccca] flex justify-center p-2">
-        <h1 className="text-4xl md:text-6xl">
+        <h1 className="font-[SunrollBold] text-4xl md:text-6xl">
           <span className="text-white uppercase">i</span>LUS
           <span className="text-white uppercase">TRACION</span>ES
         </h1>

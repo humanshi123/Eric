@@ -57,8 +57,8 @@ const Acercade = () => {
     },
   ];
   return (
-    <div className="pdf-section-grid grid px-10 pt-[80px] pb-[150px]">
-      <div className="left-column-1 flex justify-center flex-col">
+    <div className="pdf-section-grid relative px-10 pt-[80px] pb-[150px]">
+      <div className="left-column-1 w-full flex justify-center flex-col">
         <div className="flex mb-[90px]">
           <h1 className="font-[SunrollBold] text-[68px] text-[#323233]">
             ACER
@@ -67,7 +67,7 @@ const Acercade = () => {
             
           </h1>
         </div>
-        <p className="font-[AcuminProBook] text-[22px] text-[#000] font-semibold">
+        <p className="font-[AcuminProBook] max-w-[1000px] text-[22px] text-[#000] font-semibold">
           Históricamente se ha comprobado que los hongos mágicos (Psilocibe
           Cubensis) son responsables por varios avances mentales de nuestra
           especie. Ahora, científicamente se está comprobando la efectividad de
@@ -90,7 +90,7 @@ const Acercade = () => {
           </div>
         </div>
       </div>
-      <div className="right-column-1">
+      <div className="right-column-1 absolute top-[30%] right-[10%]">
       <img src={MicBox} alt="" className="hidden md:block w-full" />
       </div>
 

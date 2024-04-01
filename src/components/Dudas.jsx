@@ -78,16 +78,16 @@ const Dudas = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-4  md:pt-20">
       <div>
-        <h1 className="text-4xl text-center">
-          LAS EXPERIENCIAS QUE SE PRODUCEN
+        <h1 className="font-[AcuminProBook] tracking-[2px] text-4xl text-center">
+        LAS EXPERIENCIAS QUE SE PRODUCEN
         </h1>
       </div>
       <div className="flex flex-col md:flex-row w-[100%] ">
         <div className="relative  flex-col gap-4 md:gap-10 w-full  h-[300px] bg-[#CCCCCA] flex justify-center items-center">
-          <p className="text-center text-4xl">MACRO</p>
+          <p className="font-[SunrollBold] text-center text-4xl">MACR</p>
           <div className="text-center">
-            <h2 className="text-3xl">&quot;{quotes[currentQuoteIndex].text}&quot;</h2>
-            <span className="pt-2">- {quotes[currentQuoteIndex].person}</span>
+            <h2 className="font-[AcuminProBook] text-black text-3xl">&quot;{quotes[currentQuoteIndex].text}&quot;</h2>
+            <span className="pt-2">- {quotes[currentQuoteIndex].person}</span> 
           </div>
           <div className="absolute bottom-5 left-0 right-0 flex justify-center ">
             {quotes.map((_, index) => (
@@ -101,9 +101,9 @@ const Dudas = () => {
           </div>
         </div>
         <div className="relative flex-col gap-4 md:gap-10 w-full h-[300px] bg-[#323232] text-white flex justify-center items-center">
-          <p className="text-center text-4xl">MICRO</p>
+          <p className="font-[SunrollBold] text-[#CECECC]  text-center text-4xl">MICR</p>
           <div className="text-center">
-            <h2 className="text-3xl">&quot;{quotes2[currentQuoteIndex].text}&quot;</h2>
+            <h2 className="font-[AcuminProBook] text-[#CECECC] text-3xl">&quot;{quotes2[currentQuoteIndex].text}&quot;</h2>
             <span className="pt-2">- {quotes2[currentQuoteIndex].person}</span>
 
           </div>
@@ -120,23 +120,23 @@ const Dudas = () => {
         </div>
       </div>
       <div className="flex w-full flex-col justify-center items-center gap-4">
-        <h2 className="heading1 text-[50px] text-[#323233] text-center">
+        <h2 className="font-[SunrollBold] mt-[30px] leading-[80px] text-[68px] text-[#323233] text-center">
           DU<span className="text-gray-300">D</span>AS?
         </h2>
-        <p className=" p-2  text-xl text-center">INFÓRMESE</p>
-        <p className="bg-black p-2 text-lg text-white text-center w-full">
+        <p className="mt-3 mb-3 p-2 bg-[#323233] text-[#fff] text-xl text-center">INFÓRMESE</p>
+        <p className="bg-black p-2 text-lg text-[#CECECC] text-center w-full">
           ENVÍO GRATIS - ORDEN MÍNIMA DE $2,000 - OFRECEMOS TODOS LOS MÉTODOS DE
         </p>
-        <h2 className="heading1 text-3xl text-[#323233] text-center sm:text-[50px]">
-          DIS<span className="text-gray-300">TRI</span>BUi
+        <h2 className="font-[SunrollBold] leading-[80px] tracking-[1px] mt-[20px]  text-[68px] text-[#323233] text-center sm:text-[50px]">
+          DIS<span className="text-gray-300">TRI</span>BU
           <span className="text-gray-300">DOR</span>?
         </h2>
-        <p className="p-2 text-xl text-center max-w-[100px]">ÚNASE</p>
-        <p className="bg-black flex items-center justify-center gap-3 text-lg p-2 w-full text-[#CECECC] text-center">
+        <p className="p- mt-3 mb-3 text-xl bg-[#323233] text-[#fff] text-center max-w-[100px]">ÚNASE</p>
+        <p className="tracking-[2px] bg-black text-[#CECECC]  flex items-center justify-center gap-3 text-lg p-4 w-full text-[#CECECC] text-center">
           CONTACTE 
           <FaWhatsapp size={30} />
           +52 55 2799 
-          <span className="text-[#323233] bg-white px-3"  >ABRIR WHATSAPP</span>
+          <span className="tracking-[1px] text-[#323233] bg-white px-3"  >ABRIR WHATSAPP</span>
         </p>
       </div>
     </div>

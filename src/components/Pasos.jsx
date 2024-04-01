@@ -4,7 +4,7 @@ const Pasos = () => {
   return (
     <div>
       <div className="bg-[#ccccca] flex justify-center p-7">
-        <h1 className="text-4xl md:text-6xl">
+        <h1 className="font-[SunrollBold] text-4xl md:text-6xl">
           <span className="text-white uppercase">PASOS</span>DEL{" "}
           <span className="text-white uppercase">PROTO</span>CO
           <span className="text-white uppercase">LO</span>
