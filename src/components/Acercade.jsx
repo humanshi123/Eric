@@ -1,16 +1,15 @@
-
-import { FaClosedCaptioning, FaDownload } from "react-icons/fa";
+import { FaClosedCaptioning } from "react-icons/fa";
 import MicBox from "../assets/Acercade/mic_box.png";
 import LaManita from "../assets/pdfs/La Manita Preguntas Frecuentes .pdf";
 // import cited from "../assets/pdfs/CITED FAQ ABOUT PSILOCYBIN.pdf";
 import protocol from "../assets/pdfs/PROTOCOLO DE MICRODOSIS DE PAUL STAMETS.pdf";
 import cited from "../assets/pdfs/CITED FAQ ABOUT PSILOCYBIN.pdf";
-import pdf1 from "../assets/pdfs/La Manita Protocolo Stamets.pdf"
+import pdf1 from "../assets/pdfs/La Manita Protocolo Stamets.pdf";
 
 import { useRef, useState } from "react";
+import Download from "./Download";
 
 const Acercade = () => {
-
   const [showOverlay, setShowOverlay] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const video = useRef();
@@ -24,18 +23,15 @@ const Acercade = () => {
   };
 
   const closeOverlay = () => {
+    if (video.current) {
+      console.log(video.current);
+      video.current.pause();
 
-    if(video.current){
-      console.log(video.current)
-  video.current.pause()
-
-  video.current.currentTime = 0;
-
+      video.current.currentTime = 0;
     }
 
     setShowOverlay(false);
-  // DELETE VIDEO FROM DOM 
-
+    // DELETE VIDEO FROM DOM
   };
 
   const files = [
@@ -48,11 +44,11 @@ const Acercade = () => {
       file: protocol,
     },
     {
-      name: "CITED FAQ ABOUT PSILOCYBIN",
+      name: "MÁGENES ILUSTRATIVAS PARA INSTAGRAM",
       file: cited,
     },
     {
-      name: "La Manita Protocolo Stamets",
+      name: "VIDEO DEMOSTRANDO EL PRODUCTO Y SUS USOS (MP4)",
       file: pdf1,
     },
   ];
@@ -62,12 +58,10 @@ const Acercade = () => {
         <div className="flex mb-[90px]">
           <h1 className="font-[SunrollBold] text-[68px] text-[#323233]">
             ACER
-         <span className="text-gray-200"></span>
-            {" "}
-            
+            <span className="text-gray-200"></span> 
           </h1>
         </div>
-        <p className="font-[AcuminProBook] max-w-[1000px] text-[22px] text-[#000] font-semibold">
+        <p className="max-w-[1000px] text-[22px] text-[#000] font-semibold">
           Históricamente se ha comprobado que los hongos mágicos (Psilocibe
           Cubensis) son responsables por varios avances mentales de nuestra
           especie. Ahora, científicamente se está comprobando la efectividad de
@@ -82,7 +76,10 @@ const Acercade = () => {
             ))}
           </div>
           <div className="">
-            <div className=" text-center cursor-pointer"  onClick={()=> setShowOverlay(true)}>
+            <div
+              className=" text-center cursor-pointer"
+              onClick={() => setShowOverlay(true)}
+            >
               <p className="bg-[#323233] py-2 px-5 max-w-[500px] text-white">
                 REPRODUCE EL VIDEO E INFÓRMATE
               </p>
@@ -90,15 +87,18 @@ const Acercade = () => {
           </div>
         </div>
       </div>
-      <div className="right-column-1 absolute top-[30%] right-[10%]">
-      <img src={MicBox} alt="" className="hidden md:block w-full" />
+      <div className="right-column-1 absolute top-[20%] right-[5%]">
+        <img
+          src={MicBox}
+          alt=""
+          className="hidden md:block w-full min-w-[300px]"
+        />
       </div>
 
       {/* overlay section with video tag  */}
-   {   
-    showOverlay && (
-      <div className="fixed top-0 z-30 left-0 w-[100%] h-[90%] flex items-center justify-center bg-black bg-opacity-75">
-           <video
+      {showOverlay && (
+        <div className="fixed top-0 z-30 left-0 w-[100%] h-[90%] flex items-center justify-center bg-black bg-opacity-75">
+          <video
             ref={video}
             src="https://www.w3schools.com/html/mov_bbb.mp4"
             controls
@@ -115,8 +115,7 @@ const Acercade = () => {
             <FaClosedCaptioning /> close
           </button>
         </div>
-    )
-   }
+      )}
     </div>
   );
 };
@@ -124,11 +123,11 @@ const Acercade = () => {
 const DownloadItem = ({ title, file }) => (
   <a
     href={file}
-    className="flex text-[#000] items-center"
+    className="flex text-[#000] items-center uppercase"
     download // Add download attribute to make the link downloadable
   >
     <span className="text-[#CECECC] pr-[20px]">
-      <FaDownload />
+      <Download />
     </span>
     {title}
     <span className="text-[#CECECC] pl-[20px]"> (PDF) </span>

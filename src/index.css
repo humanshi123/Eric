@@ -30,7 +30,6 @@
   border-radius: 0;
   background-color: #f8d171;
   color: #024d94;
-  font-family: Nunito Sans;
 }
 .main {
   width: 100vw;
@@ -142,7 +141,6 @@
   @apply flex justify-between items-center;
 }
 .ac {
-  font-family: "Acumin Pro Condensed";
   color: #8f8f8f;
   font-weight: 700;
   margin: 0;
@@ -152,26 +150,23 @@
 
 body {
   background: #fff;
-  font-family: "Sunroll", sans-serif !important;
+  font-family: "AvenirLTStdLight";
   color: #555;
   font-weight: 400;
   font-size: 16px;
 }
 @font-face {
-  font-family: 'AcuminProSemibold';
-  src:  url("./assets/fonts/AcuminProSemibold.otf") format('opentype');
+  font-family: "SunrollBold";
+  src: url("./assets/fonts/SunrollBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Claston";
+  src: url("./assets/fonts/Claston.otf") format("opentype");
 }
 @font-face {
-  font-family: 'AcuminProCondLight';
-  src:  url("./assets/fonts/AcuminProCondLight.otf") format('opentype');
-}
-@font-face {
-  font-family: 'AcuminProExtraCondSemibold';
-  src:  url("./assets/fonts/AcuminProExtraCondSemibold.otf") format('opentype');
-}
-@font-face {
-  font-family: 'AcuminProBook';
-  src:  url("./assets/fonts/AcuminProBook.otf") format('opentype');
+  font-family: "AvenirLTStdLight";
+  src: url("./assets/fonts/AvenirLTStdLight.otf") format("opentype");
 }
 
 h1,
@@ -181,17 +176,16 @@ h4,
 h5,
 h6 {
   color: #323233;
-  font-family: 'AcuminProExtraCondSemibold';
-  /* font-family: "Nunito Sans", sans-serif; */
+  font-family: 'Claston';
   margin: 0;
 }
 
-p {
+p, a   {
   font-size: 16px;
-  color: #555;
+  color: #000;
   line-height: 28px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "AvenirLTStdLight";
 }
 
 b,
@@ -335,7 +329,6 @@ li {
   position: fixed;
   right: 0;
   left: 0;
-  font-family: "Nunito Sans", sans-serif;
   border-width: 0;
   border-radius: 0;
   background: transparent;
@@ -372,7 +365,6 @@ li {
   font-size: 14px;
   line-height: 1.6;
   color: #024d94;
-  font-family: "Nunito Sans";
   font-weight: 700;
 }
 .navbar-lg .navbar-nav > li > a:hover {
@@ -911,7 +903,6 @@ li {
   margin: 0 0 20px;
   text-transform: uppercase;
   letter-spacing: -1px;
-  font-family: Nunito Sans;
 }
 
 .intro6 p.lead a {
@@ -1078,7 +1069,6 @@ li {
   padding: 10px 20px 10px 20px;
   border: none;
   border-radius: 0;
-  font-family: Nunito Sans;
 }
 
 .btn i {
@@ -1153,7 +1143,6 @@ li {
 }
 
 .cta-btn {
-  font-family: Nunito Sans;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 0.025em;
@@ -1557,7 +1546,6 @@ li {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 12px;
-  font-family: Nunito Sans;
 }
 
 .fc-info a i {
@@ -1606,7 +1594,6 @@ li {
   font-weight: 700;
   padding: 10px 0 20px;
   color: #000;
-  font-family: Nunito Sans;
   text-align: center;
 }
 .pricing__price_blue {
@@ -1734,7 +1721,6 @@ li {
 }
 
 .blog-content article .post-cat {
-  font-family: Nunito Sans;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 10px;
@@ -1804,14 +1790,12 @@ li {
   font-size: 19px;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: Nunito Sans;
 }
 
 .blog-full-3col h2.post-title {
   font-size: 17px;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: Nunito Sans;
   line-height: 24px;
 }
 
@@ -1820,7 +1804,6 @@ li {
   font-weight: 400;
   padding: 5px 0 0;
   display: table;
-  font-family: Nunito Sans;
   font-size: 13px;
 }
 
@@ -2062,7 +2045,6 @@ li {
 .portfolio-filter li {
   float: left;
   margin: 0 20px;
-  font-family: Nunito Sans;
   text-transform: uppercase;
   font-size: 13px;
 }
@@ -2113,8 +2095,6 @@ li {
 
 .team-box small {
   margin: 0px 93px 15px;
-
-  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 11px;
   text-transform: uppercase;
@@ -2665,7 +2645,6 @@ li {
 .faq h4 span {
   color: #024d94;
   font-size: 48px;
-  font-family: ubuntu;
   font-weight: 100;
   vertical-align: -moz-middle-with-baseline;
 }
@@ -2704,7 +2683,6 @@ li {
 .nav-tabs > li > a {
   border: none;
   color: #666;
-  font-family: Nunito Sans;
   color: #000;
   text-transform: uppercase;
   font-size: 13px;
@@ -2766,11 +2744,9 @@ blockquote {
   font-style: italic;
   color: #000000;
   font-size: 16px;
-  font-family: Nunito Sans;
 }
 
 blockquote cite {
-  font-family: Nunito Sans;
   display: block;
   font-style: normal;
   text-transform: uppercase;
@@ -2913,7 +2889,6 @@ blockquote.pull-right {
 
 .process-step small {
   display: block;
-  font-family: Nunito Sans;
   color: #000;
   text-transform: uppercase;
   padding-top: 18px;
@@ -2979,7 +2954,6 @@ blockquote.pull-right {
 
 .process-step2 small {
   display: block;
-  font-family: Nunito Sans;
   color: #999;
   text-transform: uppercase;
   padding-top: 18px;
@@ -3100,7 +3074,6 @@ footer .list-inline li {
   font-weight: 400;
   font-size: 13px;
   border-right: 1px solid #fff;
-  font-family: Nunito Sans;
   letter-spacing: 0.5px;
 }
 
@@ -3131,7 +3104,6 @@ footer .list-inline li {
   color: #000;
   margin: 0;
   position: relative;
-  font-family: Nunito Sans;
   letter-spacing: 4px;
 }
 
@@ -3209,13 +3181,11 @@ footer .list-inline li {
   color: #000;
   font-size: 40px;
   margin: 0 0 20px;
-  font-family: Nunito Sans;
 }
 
 .stats1-info h2 {
   color: #000;
   font-size: 12px;
-  font-family: Nunito Sans;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 700;
@@ -3240,13 +3210,11 @@ footer .list-inline li {
   color: #fff;
   font-size: 40px;
   margin: 0 0 20px;
-  font-family: Nunito Sans;
 }
 
 .stats2-info h2 {
   color: #fff;
   font-size: 12px;
-  font-family: Nunito Sans;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 700;
@@ -3469,7 +3437,6 @@ footer .list-inline li {
   font-size: 32px;
   text-align: center;
   color: #999;
-  font-family: Nunito Sans;
   margin: 8px 10px 0px 0px;
 }
 
@@ -3483,7 +3450,6 @@ footer .list-inline li {
   font-size: 32px;
   text-align: center;
   color: #999;
-  font-family: Nunito Sans;
   margin: 8px 10px 0px 0px;
 }
 
@@ -3498,7 +3464,6 @@ footer .list-inline li {
   text-align: center;
   border-radius: 50%;
   color: #999;
-  font-family: Nunito Sans;
   margin: 8px 10px 0px 0px;
 }
 
@@ -3780,7 +3745,6 @@ footer .list-inline li {
   font-size: 41px;
   font-weight: 300;
   margin: 7px 0 -5px;
-  font-family: Nunito Sans;
 }
 
 .event-list li time .month {
@@ -3813,7 +3777,6 @@ footer .list-inline li {
 
 .event-list li .info h2 span {
   display: block;
-  font-family: Nunito Sans;
   font-size: 12px;
   color: #222;
   letter-spacing: 0px;
@@ -3824,7 +3787,6 @@ footer .list-inline li {
 
 .event-list li .info h2 span + span {
   display: block;
-  font-family: Nunito Sans;
   font-size: 11px;
   color: #555;
   letter-spacing: 0px;
@@ -3930,7 +3892,6 @@ footer .list-inline li {
   line-height: 120px;
   color: #fff;
   font-size: 40px;
-  font-family: Nunito Sans;
   font-weight: 400;
   margin: 20px auto;
 }
@@ -4155,7 +4116,6 @@ textarea:focus {
 }
 
 .subscribe-elt2 h5 {
-  font-family: Nunito Sans;
   font-size: 40px;
   color: #000;
   font-weight: 300;
@@ -4205,7 +4165,6 @@ textarea:focus {
 }
 
 .subscribe-elt3 h5 {
-  font-family: Nunito Sans;
   font-size: 40px;
   color: #fff;
   font-weight: 300;
@@ -5347,17 +5306,8 @@ textarea:focus {
 }
 /* add a font family from assets */
 
-@font-face {
-  font-family: "SunrollBold";
-  src: url("./assets/fonts/SunrollBold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Claston";
-  src: url("./assets/fonts/Claston.otf") format("opentype");
-}
 /* -------Custom CSS--------  */
 
 .right-column-1 {
-  transform: translate(-40%, -10%);
+  transform: translate(-20%, -5%);
 }

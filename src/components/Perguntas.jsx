@@ -3,9 +3,9 @@ import React from "react";
 const Perguntas = () => {
   return (
     <div>
-      <div className="bg-[#ccccca] flex justify-center p-7">
+      <div className="bg-[#ccccca] flex justify-center p-10">
         <h1 className="font-[SunrollBold] tracking-[0px] text-[#323233] text-4xl md:text-6xl">
-          <span className="text-white">PRE</span>g
+          <span className="text-white">PRE</span>g
           <span className="text-white">T</span> FRE{" "}
           <span className="text-white">CU</span>NT
         </h1>
@@ -17,7 +17,7 @@ const Perguntas = () => {
             <h3 className="text-lg md:text-2xl text-gray-400">
               PREGUNTA PREGUNTA PREGUNTA PREGUNTA ?
             </h3>
-            <p className="text-sm md:text-base w-full md:w-[80%]">
+            <p className="text-sm text-[#000] md:text-base w-full md:w-[80%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
@@ -28,7 +28,7 @@ const Perguntas = () => {
             <h3 className="text-lg md:text-2xl text-gray-400">
               PREGUNTA PREGUNTA PREGUNTA PREGUNTA ?
             </h3>
-            <p className="text-sm md:text-base w-full md:w-[80%]">
+            <p className="text-sm text-[#000] md:text-base w-full md:w-[80%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
@@ -42,7 +42,7 @@ const Perguntas = () => {
             <h3 className="text-lg md:text-2xl text-gray-400">
               PREGUNTA PREGUNTA PREGUNTA PREGUNTA ?
             </h3>
-            <p className="text-sm md:text-base w-full md:w-[80%]">
+            <p className="text-sm text-[#000] md:text-base w-full md:w-[80%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
@@ -53,7 +53,7 @@ const Perguntas = () => {
             <h3 className="text-lg md:text-2xl text-gray-400">
               PREGUNTA PREGUNTA PREGUNTA PREGUNTA ?
             </h3>
-            <p className="text-sm md:text-base w-full md:w-[80%]">
+            <p className="text-sm text-[#000] md:text-base w-full md:w-[80%]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,

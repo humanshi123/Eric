@@ -1,11 +1,10 @@
 import React from "react";
-import { FaDownload } from "react-icons/fa";
+import Download from "./Download";
 import LaManita from "../assets/pdfs/La Manita Preguntas Frecuentes .pdf";
 import cited from "../assets/pdfs/CITED FAQ ABOUT PSILOCYBIN.pdf";
 import protocol from "../assets/pdfs/PROTOCOLO DE MICRODOSIS DE PAUL STAMETS.pdf";
-import pdf1 from "../assets/pdfs/La Manita Protocolo Stamets.pdf"
+import pdf1 from "../assets/pdfs/La Manita Protocolo Stamets.pdf";
 // import illustraciones from "../assets/file.zip";
-
 
 const Descargas = () => {
   const files = [
@@ -42,14 +41,13 @@ const Descargas = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
-
+  };
 
   return (
     <div className="grid gap-10 text-white p-10 md:p-20 bg-[#333]">
       <div className="flex justify-center">
-        <h1 className="font-[SunrollBold] leading-[80px] tracking-[1px] text-4xl text-[#fff] md:text-6xl p-1">        
-            D<span className="text-[#CECECC]"></span>       
+        <h1 className="font-[SunrollBold] leading-[80px] tracking-[1px] text-4xl text-[#fff] md:text-6xl p-1">
+          D<span className="text-[#CECECC]"></span>
           RAS
         </h1>
       </div>
@@ -58,7 +56,11 @@ const Descargas = () => {
           {files.map((file, index) => (
             <DownloadItem title={file.name} file={file.file} key={index} />
           ))}
-           <DownloadItem title={"IMÁGENES ILUSTRATIVAS PARA INSTAGRAM (Zip"}  key={'zip'}  handler={downloadZip}/>
+          <DownloadItem
+            title={"IMÁGENES ILUSTRATIVAS PARA INSTAGRAM (Zip"}
+            key={"zip"}
+            handler={downloadZip}
+          />
         </div>
       </div>
     </div>
@@ -75,7 +77,7 @@ const DownloadItem = ({ title, file, handler }) => (
     download // Add download attribute to make the link downloadable
   >
     <span className="">
-      <FaDownload />
+      <Download />
     </span>
     {title}
   </a>

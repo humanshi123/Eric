@@ -24,7 +24,7 @@ const ProductCard = ({ id, img, title, detail, price, btnText }) => {
             width={400}
             height={400}
           />
-          <h1 className="font-[AcuminProBook] mt-3   sm:text-4xl tracking-[2px] text-2xl">{title}</h1>
+          <h1 className="mt-3 sm:text-4xl tracking-[2px] text-2xl">{title}</h1>
           <p className="px-6 text-center mt-[20px] text-black flex-1">{detail}</p>
           <div
             className="bg-[#000] mx-5 gap-3 w-full mt-10 py-6  flex items-center justify-between flex-col gap-x-10 cursor-pointer hover:bg-gray-800 "

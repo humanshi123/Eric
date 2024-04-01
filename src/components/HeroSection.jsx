@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 // import Navbar from "./Navbar";
 import macroChoco from "../assets/hero-section/MAC CHOCO BLANCHE.webp";
 import macroCinamon from "../assets/hero-section/MAC CINNAMON.webp";
@@ -21,7 +21,7 @@ const HeroSection = () => {
 
   // Function to handle click on an image
   // const handleSlideClick = (image) => {
-  //   setOverlayImage(image);    
+  //   setOverlayImage(image);
   // };
 
   // Function to close the overlay
@@ -52,6 +52,7 @@ const HeroSection = () => {
             backgroundImage: `url(${leftHorse})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
+            backgroundPositionY: "-40px",
           }}
           className="w-full md:w-[55%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative"
         >
@@ -59,7 +60,9 @@ const HeroSection = () => {
             <h2 className="font-[SunrollBold] leading-[80px] text-white text-[3xl] md:text-[68px] z-10 py-2 px-4">
               MA<span className="text-black">CR</span>
             </h2>
-            <p className="font-[AcuminProExtraCondSemibold] text-[#323233] text-[30px] mt-[30px]">EL MEJOR VIAJE DE TU VIDA</p>
+            <p className="text-[#323233] text-[30px] mt-[30px]">
+              EL MEJOR VIAJE DE TU VIDA
+            </p>
             <img
               src={macroImages[currentMacroIndex]}
               className="w-full md:max-w-lg mt-8"
@@ -72,7 +75,8 @@ const HeroSection = () => {
           style={{
             backgroundImage: `url(${rightHorse})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
+            backgroundSize: "500px",
+            height: "900px",
             backgroundPositionY: "bottom",
           }}
           className="w-full md:w-[45%] bg-[#323232] bg-cover bg-center relative"
@@ -80,14 +84,16 @@ const HeroSection = () => {
           <div className="flex flex-col justify-center  items-center p-8 md:p-16">
             <img
               src={microImages[currentMicroIndex]}
-              className="w-full md:max-w-lg mt-8"
+              className="w-full md:max-w-lg"
               alt="right product image"
               onClick={() => setOverlayImage(microImages[currentMacroIndex])}
             />
             <h2 className="font-[SunrollBold] leading-[80px] text-white z-10 md:text-[68px] mt-[30px] mt-8">
               MI<span className="text-gray-300">CR</span>
             </h2>
-            <p className="font-[AcuminProExtraCondSemibold] text-[#CECECC] text-[30px] mt-[50px]">RESTAURA TU MEJOR YO</p>
+            <p className="text-[#CECECC] text-[30px] mt-[50px]">
+              RESTAURA TU MEJOR YO
+            </p>
           </div>
         </div>
       </div>

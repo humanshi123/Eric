@@ -30,7 +30,7 @@ export default function Navbar({ toggleCart }) {
           <img src={logo} className="w-[120px] h-[100px] md:hidden  " />
           <img src={logo} className="w-[200px]  h-auto hidden md:block  " />          
         </Link>
-        <p className="pl-[15px] tracking-widest font-[AcuminProExtraCondSemibold] text-[#323233] text-xl">PRÓXIMA GENERACIÓN DE PSILOCIBINA</p>
+        <p className="pl-[15px] tracking-widest text-[#323233] text-xl">PRÓXIMA GENERACIÓN DE PSILOCIBINA</p>
       </div>
       <div className="hidden md:flex justify-between items-center gap-[15px] bg-[#333] w-[45%] h-auto px-12 text-[#CECECC]">
         <Link className="text-[#CECECC] text-[12px] ">Acerca de</Link>

@@ -22,9 +22,9 @@ import Zobrez18 from "../assets/Illustraciones/Zobrez y La Manita-18.png";
 const Ilustraciones = () => {
   return (
     <div>
-      <div className="bg-[#ccccca] flex justify-center p-2">
-        <h1 className="font-[SunrollBold] text-4xl md:text-6xl">
-          <span className="text-white uppercase">i</span>LUS
+      <div className="bg-[#ccccca] flex justify-center p-10">
+        <h1 className="font-[SunrollBold] leading-[82px] text-4xl md:text-[68px]">
+          <span className="text-white uppercase">i</span>US
           <span className="text-white uppercase">TRACION</span>ES
         </h1>
       </div>

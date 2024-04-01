@@ -9,111 +9,132 @@ import Artboard30 from "../assets/Descargas/Artboard 30.png";
 import Artboard31 from "../assets/Descargas/Artboard 31.png";
 
 const Expricance = () => {
-
-  const images = [ 
+  const images = [
     {
-      text: 'LA NUEVA IGLE SIA FAMILIAR',
+      text: "LA NUEVA IGLE SIA FAMILIAR",
       img: Artboard25,
     },
 
     {
-      text: 'RENACE CON ASOMBRO',
+      text: "RENACE CON ASOMBRO",
       img: Artboard26,
     },
 
     {
-      text: 'COMPARTE EN INTIMIDAD',
+      text: "COMPARTE EN INTIMIDAD",
       img: Artboard27,
     },
-      
-      {
-        text: 'PERCIBLE LA NATURALEZA EN TODO SU EXPLENDOR',
-        img: Artboard28,
-      },
-  
-      {
-        text: 'NO VUELVAS A DUDAR QUE ERES PARTE DE ALGO INFINITO',
-        img: Artboard29,
-      },
-  
-      {
-        text: 'FÁCILMENTE ANCLA NUEVOS PATRONES DE CONDUCTA',
-        img: Artboard30,
-      },
-  
-      {
-        text: 'VUELVETE CAPAZ DE DECIR LO NECESARIO',
-        img: Artboard31,
-      },
-  ]
+
+    {
+      text: "PERCIBLE LA NATURALEZA EN TODO SU EXPLENDOR",
+      img: Artboard28,
+    },
+
+    {
+      text: "NO VUELVAS A DUDAR QUE ERES PARTE DE ALGO INFINITO",
+      img: Artboard29,
+    },
+
+    {
+      text: "FÁCILMENTE ANCLA NUEVOS PATRONES DE CONDUCTA",
+      img: Artboard30,
+    },
+
+    {
+      text: "VUELVETE CAPAZ DE DECIR LO NECESARIO",
+      img: Artboard31,
+    },
+  ];
 
   return (
     <div>
-
-        <div className='mb-10 sm:mb-20'>
-            <h1 className='text-black text-[44px] bg-[#dbdbdb] py-5 text-center w-full'>EXPERIENCIAS</h1>
-        </div>
+      <div className="mb-10 sm:mb-20">
+        <h1 className="font-[SunrollBold] text-[#323233] text-[44px] bg-[#dbdbdb] py-5 text-center w-full">
+          EX
+          <span className="text-white uppercase">PER</span>Inc
+          <span className="text-white uppercase">ES</span>
+        </h1>
+      </div>
       <div className="hidden sm:block">
-          <div className='flex-col flex-center gap-20 mb-20'>
-            <div className='grid grid-cols-2 gap-10'>
-                <img src={Artboard25} className="" alt="illustration" width={500} height={500} />
-                <p className='text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug'>LA NUEVA IGLE SIA FAMILIAR</p>
-            </div>
-            <div className='grid grid-cols-2 gap-10'>
-                <p className='text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug'>RENACE CON ASOMBRO</p>
-                <img src={Artboard26} alt="illustration" width={500} height={500} />
-            </div>
-            <div className='grid grid-cols-2 gap-10'>
-                <img src={Artboard27} alt="illustration" width={500} height={500} />
-                <p className='text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug'>COMPARTE EN INTIMIDAD</p>
-            </div>
-            <div className='grid grid-cols-2 gap-10'>
-                <p className='text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug'>PERCIBLE LA NATURALEZA EN TODO SU EXPLENDOR</p>
-                <img src={Artboard28} alt="illustration" width={500} height={500} />
-            </div>
-            <div className='grid grid-cols-2 gap-10'>
-                <img src={Artboard29} alt="illustration" width={500} height={500} />
-                <p className='text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug'>NO VUELVAS A DUDAR QUE ERES PARTE DE ALGO INFINITO</p>
-            </div>
-            <div className='grid grid-cols-2 gap-10'>
-                <p className='text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug'>FÁCILMENTE ANCLA NUEVOS PATRONES DE CONDUCTA</p>
-                <img src={Artboard30} alt="illustration" width={500} height={500} />
-            </div>
-            <div className='grid grid-cols-2 gap-10'>
-                <img src={Artboard31} alt="illustration" width={500} height={500} />
-                <p className='text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug'>VUELVETE CAPAZ DE DECIR LO NECESARIO</p>
-            </div>
-            
+        <div className="flex-col flex-center gap-20 mb-20">
+          <div className="grid grid-cols-2 gap-10">
+            <img
+              src={Artboard25}
+              className=""
+              alt="illustration"
+              width={500}
+              height={500}
+            />
+            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+              LA NUEVA IGLE SIA FAMILIAR
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-10">
+            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+              RENACE CON ASOMBRO
+            </p>
+            <img src={Artboard26} alt="illustration" width={500} height={500} />
+          </div>
+          <div className="grid grid-cols-2 gap-10">
+            <img src={Artboard27} alt="illustration" width={500} height={500} />
+            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+              COMPARTE EN INTIMIDAD
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-10">
+            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+              PERCIBLE LA NATURALEZA EN TODO SU EXPLENDOR
+            </p>
+            <img src={Artboard28} alt="illustration" width={500} height={500} />
+          </div>
+          <div className="grid grid-cols-2 gap-10">
+            <img src={Artboard29} alt="illustration" width={500} height={500} />
+            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+              NO VUELVAS A DUDAR QUE ERES PARTE DE ALGO INFINITO
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-10">
+            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+              FÁCILMENTE ANCLA NUEVOS PATRONES DE CONDUCTA
+            </p>
+            <img src={Artboard30} alt="illustration" width={500} height={500} />
+          </div>
+          <div className="grid grid-cols-2 gap-10">
+            <img src={Artboard31} alt="illustration" width={500} height={500} />
+            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+              VUELVETE CAPAZ DE DECIR LO NECESARIO
+            </p>
+          </div>
         </div>
       </div>
 
       <div className="sm:hidden grid gap-10 justify-items-center pb-10">
-        {
-          images.map((image, index)=>(
+        {images.map((image, index) => (
+          <div className="grid w-4/5  relative h-[300px] " key={index}>
+            <img
+              src={image.img}
+              alt="illustration"
+              className="absolute top-0 left-0 w-full object-cover "
+            />
+            <p className="text-white  bg-[#32323322] w-full text-center  flex-center text-[32px] leading-snug relative z-10 ">
+              {image.text}
+            </p>
+          </div>
 
-            <div className='grid w-4/5  relative h-[300px] ' key={index}>
+          // <div key={index}>
+          //   <div>
 
-              <img src={image.img} alt="illustration" className="absolute top-0 left-0 w-full object-cover " />
-              <p className='text-white  bg-[#32323322] w-full text-center  flex-center text-[32px] leading-snug relative z-10 '>{image.text}</p>
-            </div>
+          // <img src=P{} alt="" />
 
-            // <div key={index}>
-            //   <div>
-
-            // <img src=P{} alt="" />
-
-            //   </div>
-            // </div>
-
-            
-          ))
-        }
+          //   </div>
+          // </div>
+        ))}
       </div>
-  
+
       <div className="">
         <div>
-          <div className="bg-[#ccccca]  flex justify-center p-7">
-            <h1 className="text-4xl md:text-6xl">
+          <div className="bg-[#ccccca]  flex justify-center p-10">
+            <h1 className="font-[SunrollBold] text-4xl md:text-6xl">
               <span className="text-white uppercase">Re</span>CONO
               <span className="text-white uppercase">Clmient</span>OS
             </h1>

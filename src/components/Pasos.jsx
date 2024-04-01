@@ -3,11 +3,11 @@ import React from "react";
 const Pasos = () => {
   return (
     <div>
-      <div className="bg-[#ccccca] flex justify-center p-7">
+      <div className="bg-[#ccccca] flex justify-center p-10">
         <h1 className="font-[SunrollBold] text-4xl md:text-6xl">
           <span className="text-white uppercase">PASOS</span>DEL{" "}
           <span className="text-white uppercase">PROTO</span>CO
-          <span className="text-white uppercase">LO</span>
+          <span className="text-white uppercase"></span>
         </h1>
       </div>
       <div className="bg-[#f9f9f6] gap-5 md:gap-10 text-gray-400 text-lg md:text-xl flex flex-col justify-center items-center p-10 md:p-20">
