@@ -93,12 +93,13 @@ const Distrib = ({ products }) => {
           className="w-full md:w-1/4 lg:w-1/5 xl:w-1/6 rotate-180 -mr-[100px]"
         />
       </div>
-      <div className="mt-[100px] flex justify-center flex-col items-center gap-10">
-        <h1 className="font-[SunrollBold] text-[#CECECC] leading-[82px] text-4xl md:text-[68px] md:mb-[40px]">MI
+      <div className="md:mt-[100px] flex justify-center flex-col items-center md:gap-10">
+        <h1 className="font-[SunrollBold] text-[#CECECC] leading-[82px] text-4xl md:text-[68px] mb-[20px] md:mb-[40px]">
+          MI
           <span className="text-[#000]">CR</span>
         </h1>
 
-        <div className="flex flex-col md:flex-row justify-center gap-10">
+        <div className="flex sm:px-5 w-full flex-col md:flex-row justify-center gap-10">
           {products.slice(0, 2).map((product, index) => (
             <ProductCard
               key={index}
@@ -114,7 +115,8 @@ const Distrib = ({ products }) => {
       </div>
 
       <div className="flex flex-col items-center gap-10 justify-center">
-        <h1 className="font-[SunrollBold] text-[#CECECC] text-4xl md:text-5xl md:mb-[30px]  md:mt-[80px]">MA
+        <h1 className="font-[SunrollBold] text-[#CECECC] text-4xl md:text-5xl md:mb-[30px]  md:mt-[80px]">
+          MA
           <span className="text-[#323233]">CR</span>
         </h1>
         {products.slice(2, products.length - 1).map((product, index) => (

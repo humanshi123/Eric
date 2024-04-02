@@ -53,13 +53,13 @@ const HeroSection = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
           }}
-          className="w-full md:w-[55%] bg-[#ccccca] pt-[100px] bg-cover bg-center bg-no-repeat relative"
+          className="w-full md:w-[55%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative"
         >
           <div className="flex flex-col md:pt-[100px] items-center p-8 md:p-16">
-            <h2 className="font-[SunrollBold] leading-[80px] text-white text-[3xl] md:text-[68px] z-10 py-2 px-4">
+            <h2 className="font-[SunrollBold] sm:leading-[80px] text-white text-[36px] md:text-[68px] z-10 ">
               MA<span className="text-black">CR</span>
             </h2>
-            <p className="text-[#323233] font-[Claston] text-[30px] mt-[30px]">
+            <p className="text-[#323233] font-[Claston] sm:text-[30px] mt-[20px] md:mt-[30px]">
               EL MEJOR VIAJE DE TU VIDA
             </p>
             <img
@@ -75,10 +75,10 @@ const HeroSection = () => {
             backgroundImage: `url(${rightHorse})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "500px",
-            height: "900px",
+            // height: "900px",
             backgroundPositionY: "bottom",
           }}
-          className="w-full md:w-[45%] pt-[100px] bg-[#323232] bg-cover bg-center relative"
+          className="w-full md:w-[45%] md:h-[900px] bg-[#323232] bg-cover bg-center relative"
         >
           <div className="flex flex-col justify-center  items-center p-8 md:p-16">
             <img
@@ -87,17 +87,17 @@ const HeroSection = () => {
               alt="right product image"
               onClick={() => setOverlayImage(microImages[currentMacroIndex])}
             />
-            <h2 className="font-[SunrollBold] leading-[80px] text-white z-10 md:text-[68px] mt-[30px] mt-8">
+            <h2 className="font-[SunrollBold] sm:leading-[80px] text-[36px] text-white z-10 md:text-[68px] mt-[30px] mt-8">
               MI<span className="text-gray-300">CR</span>
             </h2>
-            <p className="text-[#CECECC] font-[Claston] text-[30px] mt-[50px]">
+            <p className="text-[#CECECC] font-[Claston] sm:text-[30px] mt-[20px] md:mt-[50px]">
               RESTAURA TU MEJOR YO
             </p>
           </div>
         </div>
       </div>
       {overlayImage && (
-        <div className="fixed top-10 z-30 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75">
+        <div className="fixed top-0 z-30 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75">
           <img
             src={overlayImage}
             alt="overlay"

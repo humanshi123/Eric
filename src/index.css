@@ -3667,6 +3667,9 @@ footer .list-inline li {
 }
 
 @media (max-width: 767px) {
+  p {
+    font-size: 16px;
+  }
   ul.timeline:before {
     left: 40px;
   }

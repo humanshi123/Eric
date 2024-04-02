@@ -73,15 +73,15 @@ const Dudas = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-4  md:pt-20">
       <div>
-        <h1 className="tracking-[2px] text-4xl text-center">
+        <h1 className="tracking-[2px] md:text-[40px] text-[22px] text-center">
           LAS EXPERIENCIAS QUE SE PRODUCEN
         </h1>
       </div>
       <div className="flex flex-col md:flex-row w-[100%] ">
         <div className="relative  flex-col gap-4 md:gap-10 w-full  h-[300px] bg-[#CCCCCA] flex justify-center items-center">
           <p className="font-[SunrollBold] text-center text-4xl">MACR</p>
-          <div className="text-center">
-            <h2 className="text-black text-3xl">
+          <div className="text-center px-4">
+            <h2 className="font-[AvenirLTStdLight] text-black text-[20px] md:text-3xl">
               &quot;{quotes[currentQuoteIndex].text}&quot;
             </h2>
             <span className="pt-2">- {quotes[currentQuoteIndex].person}</span>
@@ -101,8 +101,8 @@ const Dudas = () => {
           <p className="font-[SunrollBold] text-[#CECECC]  text-center text-4xl">
             MICR
           </p>
-          <div className="text-center">
-            <h2 className="text-[#CECECC] text-3xl">
+          <div className="text-center px-4">
+            <h2 className="text-[#CECECC] font-[AvenirLTStdLight] text-[20px] md:text-3xl">
               &quot;{quotes2[currentQuoteIndex].text}&quot;
             </h2>
             <span className="pt-2">- {quotes2[currentQuoteIndex].person}</span>
@@ -120,30 +120,30 @@ const Dudas = () => {
         </div>
       </div>
       <div className="flex w-full flex-col justify-center items-center gap-4">
-        <h2 className="font-[SunrollBold] mt-[30px] leading-[80px] text-[68px] text-[#323233] text-center">
+        <h2 className="font-[SunrollBold] sm:leading-[80px] tracking-[1px] mt-[30px] text-[#323233] text-center text-[30px] sm:text-[68px]">
           DU<span className="text-gray-300">D</span>AS?
         </h2>
         <Link
           to={"/distributors"}
-          className=" mt-3 mb-3 p-2 text-xl bg-[#323233] text-[#fff] text-center "
+          className=" mt-3 mb-3 p-2 text-sm sm:text-xl bg-[#323233] text-[#fff] text-center "
         >
           INFÓRMESE
         </Link>
         <p className="bg-black p-2 text-lg text-[#CECECC] text-center w-full">
           ENVÍO GRATIS - ORDEN MÍNIMA DE $2,000 - OFRECEMOS TODOS LOS MÉTODOS DE
         </p>
-        <h2 className="font-[SunrollBold] leading-[80px] tracking-[1px] mt-[20px] text-[#323233] text-center sm:text-[68px]">
+        <h2 className="font-[SunrollBold] sm:leading-[80px] tracking-[1px] mt-[20px] text-[#323233] text-center text-[30px] sm:text-[68px]">
           DIS<span className="text-gray-300">TRI</span>BU
           <span className="text-gray-300">DOR</span>?
         </h2>
         <Link
           to={"/distributors"}
-          className=" mt-3 mb-3 p-2 text-xl bg-[#323233] text-[#fff] text-center"
+          className=" mt-3 mb-3 p-2 text-sm sm:text-xl bg-[#323233] text-[#fff] text-center"
         >
           ÚNASE
         </Link>
-        <div className="flex items-center justify-center p-4 gap-3 w-full bg-black">
-          <p className="tracking-[2px] text-[#CECECC] text-lg text-[#CECECC] text-center">
+        <div className="flex items-center sm:flex-nowrap flex-wrap justify-center p-4 gap-3 w-full bg-black">
+          <p className="tracking-[2px] text-[#CECECC] sm:text-lg text-[#CECECC] text-center">
             CONTACTE
           </p>
           <p className="tracking-[2px] flex gap-2 text-[#CECECC] text-lg text-[#CECECC] text-center">

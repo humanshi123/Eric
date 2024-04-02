@@ -63,15 +63,15 @@ const Acercade = () => {
     },
   ];
   return (
-    <div className="pdf-section-grid relative px-10 pt-[80px] pb-[150px]">
+    <div className="pdf-section-grid relative px-10 md:pt-[80px] md:pb-[150px] pb-[30px] pt-[40px]">
       <div className="left-column-1 w-full flex justify-center flex-col">
-        <div className="flex mb-[90px]">
-          <h1 className="font-[SunrollBold] text-[68px] text-[#323233]">
+        <div className="flex mb-[20px] md:mb-[90px]">
+          <h1 className="font-[SunrollBold] text-[36px] md:text-[68px] text-[#323233]">
             ACER
             <span className="text-gray-200"></span> 
           </h1>
         </div>
-        <p className="max-w-[1000px] text-[22px] text-[#000]">
+        <p className="max-w-[1000px] text-[18px] md:text-[22px] text-[#000]">
           Históricamente se ha comprobado que los hongos mágicos (Psilocibe
           Cubensis) son responsables por varios avances mentales de nuestra
           especie. Ahora, científicamente se está comprobando la efectividad de
@@ -80,7 +80,7 @@ const Acercade = () => {
           esencia!
         </p>
         <div className="gap-5 grid mt-[30px]">
-          <div className="flex flex-col gap-3 font-semibold">
+          <div className="flex flex-col gap-3 ">
             {files.map((file, index) => (
               <DownloadItem
                 title={file.name}
@@ -90,15 +90,20 @@ const Acercade = () => {
               />
             ))}
           </div>
-          <div className="">
+          <div className="flex md:flex-nowrap gap-3 flex-wrap justify-between items-center">
             <div
-              className=" text-center cursor-pointer"
+              className=" text-center cursor-pointer md:w-[50%] md:max-w-[500px] "
               onClick={() => setShowOverlay(true)}
             >
-              <p className="bg-[#323233] py-2 px-5 max-w-[500px] text-white">
+              <p className="bg-[#323233] py-2 px-5 text-white">
                 REPRODUCE EL VIDEO E INFÓRMATE
               </p>
             </div>
+            <p className="max-w-[550px] text-[18px] text-[#000]">
+              *<span className="text-[#CACAC8]">Dato curioso</span>: Fué vuelta
+              ilegal en 1973 precisamente porque libera la mente de sistemas de
+              pensar que atan
+            </p>
           </div>
         </div>
       </div>
