@@ -92,10 +92,10 @@ const Acercade = () => {
           </div>
           <div className="flex md:flex-nowrap gap-3 flex-wrap justify-between items-center">
             <div
-              className=" text-center cursor-pointer md:w-[50%] md:max-w-[500px] "
+              className=" text-center cursor-pointer w-full md:w-[50%] md:max-w-[500px] "
               onClick={() => setShowOverlay(true)}
             >
-              <p className="bg-[#323233] py-2 px-5 text-white">
+              <p className="bg-[#323233] p-2 md:px-5 text-white">
                 REPRODUCE EL VIDEO E INFÓRMATE
               </p>
             </div>

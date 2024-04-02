@@ -18,7 +18,7 @@ const ProductCard = ({ id, img, title, detail, price, btnText }) => {
       <div className="bg-[#dbdbdb] w-full sm:max-w-[550px] flex-col flex justify-center pt-10  ">
         <div className="flex-center flex-col h-full">
           <img
-            className=" mix-blend-multiply items-center"
+            className="px-3 mix-blend-multiply items-center"
             src={img}
             alt="lamanita image"
             width={400}
@@ -35,7 +35,9 @@ const ProductCard = ({ id, img, title, detail, price, btnText }) => {
             }}
           >
             <p className="text-white justify-self-center">{price}</p>
-            <p className="text-[#323233] px-5 bg-white">{btnText}</p>
+            <p className="text-[#323233] sm:text-[22px] px-5 bg-white">
+              {btnText}
+            </p>
           </div>
         </div>
       </div>

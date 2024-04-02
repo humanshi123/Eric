@@ -119,8 +119,8 @@ const Dudas = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-full flex-col justify-center items-center gap-4">
-        <h2 className="font-[SunrollBold] sm:leading-[80px] tracking-[1px] mt-[30px] text-[#323233] text-center text-[30px] sm:text-[68px]">
+      <div className="flex w-full flex-col justify-center items-center gap-2 md:gap-4">
+        <h2 className="font-[SunrollBold] sm:leading-[80px] tracking-[1px] mt-[10px] text-[#323233] text-center text-[30px] sm:text-[68px]">
           DU<span className="text-gray-300">D</span>AS?
         </h2>
         <Link
@@ -129,7 +129,7 @@ const Dudas = () => {
         >
           INFÓRMESE
         </Link>
-        <p className="bg-black p-2 text-lg text-[#CECECC] text-center w-full">
+        <p className="bg-black px-4 p-2 text-lg text-[#CECECC] text-center w-full">
           ENVÍO GRATIS - ORDEN MÍNIMA DE $2,000 - OFRECEMOS TODOS LOS MÉTODOS DE
         </p>
         <h2 className="font-[SunrollBold] sm:leading-[80px] tracking-[1px] mt-[20px] text-[#323233] text-center text-[30px] sm:text-[68px]">

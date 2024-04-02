@@ -52,7 +52,7 @@ const Ventajas = () => {
 
 const VentajaItem = ({ imgSrc, title, description }) => {
   return (
-    <div className="flex gap-4 items-center">
+    <div className="flex gap-4 items-start md:items-center">
       <img src={imgSrc} alt="" className="w-16 md:w-24" />
       <div className="flex flex-col">
         <h3 className="text-[18px] md:text-3xl">{title}</h3>
