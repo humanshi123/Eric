@@ -8,7 +8,7 @@ import microCacao from "../assets/hero-section/MIC CACAO.webp";
 import microVanilla from "../assets/hero-section/MIC VANILLA.webp";
 import rightHorse from "../assets/hero-section/right-horse.svg";
 import leftHorse from "../assets/hero-section/left-horse.svg";
-import { FaClosedCaptioning } from "react-icons/fa";
+import CloseIcon from "./CloseIcon";
 
 const HeroSection = () => {
   const microImages = [microCacao, microVanilla];
@@ -52,20 +52,19 @@ const HeroSection = () => {
             backgroundImage: `url(${leftHorse})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
-            backgroundPositionY: "-40px",
           }}
-          className="w-full md:w-[55%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative"
+          className="w-full md:w-[55%] bg-[#ccccca] pt-[100px] bg-cover bg-center bg-no-repeat relative"
         >
-          <div className="flex flex-col md:pt-[200px] items-center p-8 md:p-16">
+          <div className="flex flex-col md:pt-[100px] items-center p-8 md:p-16">
             <h2 className="font-[SunrollBold] leading-[80px] text-white text-[3xl] md:text-[68px] z-10 py-2 px-4">
               MA<span className="text-black">CR</span>
             </h2>
-            <p className="text-[#323233] text-[30px] mt-[30px]">
+            <p className="text-[#323233] font-[Claston] text-[30px] mt-[30px]">
               EL MEJOR VIAJE DE TU VIDA
             </p>
             <img
               src={macroImages[currentMacroIndex]}
-              className="w-full md:max-w-lg mt-8"
+              className="w-full md:max-w-lg"
               alt="left product image"
               onClick={() => setOverlayImage(macroImages[currentMacroIndex])}
             />
@@ -79,7 +78,7 @@ const HeroSection = () => {
             height: "900px",
             backgroundPositionY: "bottom",
           }}
-          className="w-full md:w-[45%] bg-[#323232] bg-cover bg-center relative"
+          className="w-full md:w-[45%] pt-[100px] bg-[#323232] bg-cover bg-center relative"
         >
           <div className="flex flex-col justify-center  items-center p-8 md:p-16">
             <img
@@ -91,7 +90,7 @@ const HeroSection = () => {
             <h2 className="font-[SunrollBold] leading-[80px] text-white z-10 md:text-[68px] mt-[30px] mt-8">
               MI<span className="text-gray-300">CR</span>
             </h2>
-            <p className="text-[#CECECC] text-[30px] mt-[50px]">
+            <p className="text-[#CECECC] font-[Claston] text-[30px] mt-[50px]">
               RESTAURA TU MEJOR YO
             </p>
           </div>
@@ -103,13 +102,13 @@ const HeroSection = () => {
             src={overlayImage}
             alt="overlay"
             className="max-h-full max-w-full"
-            onClick={closeOverlay}
+            // onClick={closeOverlay}
           />
           <button
             onClick={closeOverlay}
-            className="absolute top-4 right-4 text-white bg-red-500 px-2 py-1 rounded"
+            className="absolute top-4 right-4 bg-white px-2 py-1 rounded"
           >
-            <FaClosedCaptioning />
+            <CloseIcon />
           </button>
         </div>
       )}

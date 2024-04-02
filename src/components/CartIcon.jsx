@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-const CartIcon = ({ width = 18, height = 17, color = "currentColor" }) => {
+const CartIcon = ({ width = 22, height = 22, color = "#CACAC8" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

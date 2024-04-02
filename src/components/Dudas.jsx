@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const quotes = [
   {
@@ -54,6 +55,10 @@ const quotes2 = [
 
 const Dudas = () => {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
+
+  const handleWhatsapp = () => {
+    window.open("whatsapp://send?phone=+573043049174");
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -118,9 +123,12 @@ const Dudas = () => {
         <h2 className="font-[SunrollBold] mt-[30px] leading-[80px] text-[68px] text-[#323233] text-center">
           DU<span className="text-gray-300">D</span>AS?
         </h2>
-        <p className="mt-3 mb-3 p-2 bg-[#323233] text-[#fff] text-xl text-center">
+        <Link
+          to={"/distributors"}
+          className=" mt-3 mb-3 p-2 text-xl bg-[#323233] text-[#fff] text-center "
+        >
           INFÓRMESE
-        </p>
+        </Link>
         <p className="bg-black p-2 text-lg text-[#CECECC] text-center w-full">
           ENVÍO GRATIS - ORDEN MÍNIMA DE $2,000 - OFRECEMOS TODOS LOS MÉTODOS DE
         </p>
@@ -128,18 +136,27 @@ const Dudas = () => {
           DIS<span className="text-gray-300">TRI</span>BU
           <span className="text-gray-300">DOR</span>?
         </h2>
-        <p className="p- mt-3 mb-3 text-xl bg-[#323233] text-[#fff] text-center max-w-[100px]">
+        <Link
+          to={"/distributors"}
+          className=" mt-3 mb-3 p-2 text-xl bg-[#323233] text-[#fff] text-center"
+        >
           ÚNASE
-        </p>
-        <p className="tracking-[2px] bg-black text-[#CECECC]  flex items-center justify-center gap-3 text-lg p-4 w-full text-[#CECECC] text-center">
-          CONTACTE
-          <FaWhatsapp size={30} />
-          +52 55 2799
-          <span className="tracking-[1px] text-[#323233] bg-white px-3">
-            {" "}
+        </Link>
+        <div className="flex items-center justify-center p-4 gap-3 w-full bg-black">
+          <p className="tracking-[2px] text-[#CECECC] text-lg text-[#CECECC] text-center">
+            CONTACTE
+          </p>
+          <p className="tracking-[2px] flex gap-2 text-[#CECECC] text-lg text-[#CECECC] text-center">
+            <FaWhatsapp size={30} />
+            +52 55 2799
+          </p>
+          <button
+            className="tracking-[1px] text-[#323233] bg-white px-3"
+            onClick={handleWhatsapp}
+          >
             ABRIR WHATSAPP
-          </span>
-        </p>
+          </button>
+        </div>
       </div>
     </div>
   );
