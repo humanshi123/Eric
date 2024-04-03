@@ -1,7 +1,7 @@
 // eslint-disable-next-line react/prop-types
 const CloseIcon = ({ color = "#323233" }) => {
   return (
-    <svg
+    <svg className="cursor-pointer"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 10 10"
       width="15"

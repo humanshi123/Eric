@@ -8,7 +8,7 @@ const Distrib = ({ products }) => {
   //   {
   //     id: 1,
   //     img: product1,
-  //     title: "CHAI VAINILA",
+  //     title: "CHAI VAINILA aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
   //     detail: "Caja de 30 sobres con 0.33g (10g)",
   //     btnText: "AÑADIR",
   //     price: "1,250",
@@ -17,7 +17,7 @@ const Distrib = ({ products }) => {
   //   {
   //     id: 2,
   //     img: coca,
-  //     title: "CACAO DORADO (KITO)",
+  //     title: "CACAO DORADO (KETO)",
   //     detail: "Caja de 30 sobres con 0.33g (10g) por sobre",
   //     btnText: "AÑADIR",
   //     price: "1,250",

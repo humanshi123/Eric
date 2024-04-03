@@ -1,10 +1,24 @@
 import Dist2 from "../components/Dist2";
 import Navbar from "../components/Navbar";
+import { useState } from "react";
 import Map from "../components/Map";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Distribudors.css";
 import { FaWhatsapp } from "react-icons/fa";
+import FormData from "../components/FormData";
+
 export default function Distrubudors() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
+
+  const handleSubmit = (formData) => {
+    // Handle form submission here, e.g., send data to server
+    console.log("Form Data:", formData);
+    closePopup(); // Close the popup after form submission
+  };
+
   return (
     <div>
       <div className="halfbg fixed w-full">
@@ -15,9 +29,20 @@ export default function Distrubudors() {
       </div>
       <div>
         <div className="mb-20">
-          <h1 className="text-white text-[44px] bg-gruu py-5 text-center w-full">
-            INGRESE Y PUBLIQUE SUS DATOS DE LLENE EL FORMULARIO
-          </h1>
+          <div className="flex justify-center p-2 mt-5 items-center">
+            <h1 className="text-black text-[24px] bg-gruu  text-center">
+              INGRESE Y PUBLIQUE SUS DATOS DE
+            </h1>
+            <button
+              className="bg-[#323233] text-[#fff] p-2 mx-3"
+              onClick={openPopup}
+            >
+              LLENE EL FORMULARIO{" "}
+            </button>
+            {/* {isPopupOpen && (
+              <FormData onSubmit={handleSubmit} onCancel={closePopup} />
+            )} */}
+          </div>
         </div>
         {/* <ul className="grid sm:grid-cols-5 grid-cols-1 flex-center gap sm:gap-32 text-[20px]"> */}
 

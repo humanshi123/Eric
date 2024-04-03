@@ -96,7 +96,7 @@ const Acercade = () => {
               onClick={() => setShowOverlay(true)}
             >
               <p className="bg-[#323233] p-2 md:px-5 text-white">
-                REPRODUCE EL VIDEO E INFÓRMATE
+                REPRODUZCA EL VIDEO E NINFORMESE
               </p>
             </div>
             <p className="max-w-[550px] text-[18px] text-[#000]">

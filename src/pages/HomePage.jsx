@@ -29,7 +29,7 @@ export default function HomePage() {
     {
       id: 2,
       img: coca,
-      title: "CACAO DORADO (KITO)",
+      title: "CACAO DORADO (KETO)",
       detail: "Caja de 30 sobres con 0.33g (10g) por sobre",
       btnText: "AÑADIR",
       price: "1,250",
@@ -39,7 +39,7 @@ export default function HomePage() {
     {
       id: 3,
       img: zpurple,
-      title: "ROL DE",
+      title: "ROL DE CANELA",
       detail:
         "1.25g de Psilocibe Cubensis por sobre (1 sobre Macro = 4-6 horas con visuales)",
       btnText: "AÑADIR",
@@ -50,7 +50,7 @@ export default function HomePage() {
     {
       id: 4,
       img: zblack,
-      title: "CHOCOLATE",
+      title: "CHOCOLATE BLANCO",
       detail:
         "1.25g de Psilocibe Cubensis por sobre (2 sobres Macro = 6-8 horas del mejor viaje de tu vida. ¡Prepárate!)",
       btnText: "AÑADIR",
@@ -61,7 +61,7 @@ export default function HomePage() {
     {
       id: 5,
       img: zwine,
-      title: "CARAMELO",
+      title: "CARAMELO ",
       detail:
         "1.25g de Psilocibe Cubensis por sobre (Vacía el polvo en un café o te tibio y tómalo de un trago)",
       btnText: "AÑADIR",
@@ -72,7 +72,7 @@ export default function HomePage() {
     {
       id: 6,
       img: zgold,
-      title: "PAY DE",
+      title: "PAY DE LIMÓN",
       detail:
         "1.25g de Psilocibe Cubensis por sobre (Texas Yellow Cap, Z-Strain y Storm Troopers en cada formulación)",
       btnText: "AÑADIR",
@@ -82,7 +82,7 @@ export default function HomePage() {
     {
       id: 7,
       img: zyellowblack,
-      title: "CACAO DORADO ",
+      title: "CACAO DORADO (KETO VEGANO)",
       detail:
         "1.25g de Psilocibe Cubensis por sobre (Sin calorias. ¡Viaja sin afectar la dieta!)",
       btnText: "AÑADIR",
