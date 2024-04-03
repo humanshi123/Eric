@@ -2,6 +2,7 @@
 const Download = ({ width = 30, height = 30, color = "currentColor" }) => {
   return (
     <svg
+      className="w-[20px] h-[20px] md:w-[30px] md:h-[30px] "
       width={width}
       height={height}
       fill={color}

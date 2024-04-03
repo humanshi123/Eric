@@ -151,7 +151,7 @@ const Dudas = () => {
             +52 55 2799
           </p>
           <button
-            className="tracking-[1px] text-[#323233] bg-white px-3"
+            className="tracking-[1px] text-[#323233] bg-white pt-2 pb-1 px-3"
             onClick={handleWhatsapp}
           >
             ABRIR WHATSAPP

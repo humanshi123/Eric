@@ -24,7 +24,9 @@ const ProductCard = ({ id, img, title, detail, price, btnText }) => {
             width={400}
             height={400}
           />
-          <h1 className="mt-3 sm:text-4xl tracking-[2px] text-2xl">{title}</h1>
+          <h1 className="mt-3 text-center sm:text-4xl tracking-[2px] text-2xl">
+            {title}
+          </h1>
           <p className="px-6 text-center mt-[20px] text-black flex-1">
             {detail}
           </p>

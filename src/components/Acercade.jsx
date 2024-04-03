@@ -63,7 +63,7 @@ const Acercade = () => {
     },
   ];
   return (
-    <div className="pdf-section-grid relative px-10 md:pt-[80px] md:pb-[150px] pb-[30px] pt-[40px]">
+    <div className="pdf-section-grid relative px-4 md:px-10 md:pt-[80px] md:pb-[150px] pb-[30px] pt-[40px]">
       <div className="left-column-1 w-full flex justify-center flex-col">
         <div className="flex mb-[20px] md:mb-[90px]">
           <h1 className="font-[SunrollBold] text-[36px] md:text-[68px] text-[#323233]">
@@ -95,7 +95,7 @@ const Acercade = () => {
               className=" text-center cursor-pointer w-full md:w-[50%] md:max-w-[500px] "
               onClick={() => setShowOverlay(true)}
             >
-              <p className="bg-[#323233] p-2 md:px-5 text-white">
+              <p className="bg-[#323233] p-2 md:px-5 pt-2.5 text-white">
                 REPRODUZCA EL VIDEO E NINFORMESE
               </p>
             </div>
@@ -159,7 +159,7 @@ const Acercade = () => {
 const DownloadItem = ({ title, file, filetype }) => (
   <a
     href={file}
-    className="flex text-[#000] items-center uppercase"
+    className="flex text-sm md:text-[22px] text-[#000] items-center uppercase"
     download // Add download attribute to make the link downloadable
   >
     <span className="text-[#CECECC] pr-[20px]">
