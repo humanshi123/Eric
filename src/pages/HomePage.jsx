@@ -29,7 +29,7 @@ export default function HomePage() {
     {
       id: 2,
       img: coca,
-      title: "CACAO DORADO (KETO)",
+      title: "CACAO DORADO (KETO VEGANO)",
       detail: "Caja de 30 sobres con 0.33g (10g) por sobre",
       btnText: "AÑADIR",
       price: "1,250",

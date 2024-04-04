@@ -5314,3 +5314,14 @@ textarea:focus {
 .right-column-1 {
   transform: translate(-20%, -5%);
 }
+.Country-Selector .css-13cymwt-control {
+  min-height: 45px;
+  border-radius: 0 !important;
+  border-width: 0 !important;
+}
+.number-list li {
+  font-size: 20px;
+}
+.country-list li {
+  color: #323233;
+}

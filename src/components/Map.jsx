@@ -4,7 +4,7 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 const MapContainer = () => {
     const apiKey = import.meta.env.REACT_APP_MAP_KEY;
   const mapStyles = {
-    height: "40vh",
+    height: "50vh",
     width: "100%"
   };
 

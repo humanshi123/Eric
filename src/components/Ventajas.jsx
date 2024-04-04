@@ -17,7 +17,7 @@ const Ventajas = () => {
           <VentajaItem
             imgSrc={Artboard32}
             title="COMPACTO"
-            description="Caben 2 sobres Micro en el 50 bolsillo del jean. Caben 20 Macro en una bolsa de noche. Caben 200 Macro y"
+            description="Caben 2 sobres Micro en el 50 bolsillo del jean. Caben 20 Macro en una bolsa de noche. Caben 200 Macro y 200 Micro en una pequeña mochila."
           />
           <VentajaItem
             imgSrc={Artboard33}
@@ -32,17 +32,17 @@ const Ventajas = () => {
           <VentajaItem
             imgSrc={Artboard35}
             title="ESTÉRIL"
-            description="Métodos de cultivo avanzados, laboratorios abastecidos y maquinaria de última generación nos han ganado la"
+            description="Métodos de cultivo avanzados, laboratorios abastecidos y maquinaria de última generación nos han ganado la preferencia de la comunidad de terapeutas."
           />
           <VentajaItem
             imgSrc={Artboard36}
             title="DURADERO"
-            description="El sobre protege de rayos UV y oxígeno, que degradan la molécula. Consume con confianza 2 años después de la"
+            description="El sobre protege de rayos UV y oxígeno, que degradan la molécula. Consume con confianza 2 años después de la vfecha de elaboración."
           />
           <VentajaItem
             imgSrc={Artboard37}
             title="POTENTE"
-            description="Cada sobre contiene la mezcla de 3 cepas mágicas, permitiendo el rango máximo de experiencia."
+            description="Cada sobre contiene la mezcla de 3 cepas mágicas, permitiendo el rango máximo de experiencia: visual, sensorial, mental y eufórico. "
           />
         </div>
       </div>

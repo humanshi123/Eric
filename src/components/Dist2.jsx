@@ -4,7 +4,8 @@ import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import { FaWhatsapp } from "react-icons/fa";
 
-function Dist2() {
+function 
+Dist2() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);

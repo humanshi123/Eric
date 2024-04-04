@@ -1,9 +1,15 @@
 import women from "../assets/Ventajas/women.svg";
 import rock from "../assets/Ventajas/rock.svg";
-
+import CloseIcon from "./CloseIcon";
 import ProductCard from "./ProductCard";
+import { useRef, useState } from "react";
 
 const Distrib = ({ products }) => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handleVideoPlay = () => {
+    setShowVideo(!showVideo);
+  };
   // const products = [
   //   {
   //     id: 1,
@@ -84,8 +90,12 @@ const Distrib = ({ products }) => {
 
   return (
     <div className="flex flex-col gap-10 py-6">
-      <div className="hidden md:flex  justify-between overflow-hidden">
+      <div
+        className="hidden md:flex  justify-between overflow-hidden"
+        onClick={handleVideoPlay}
+      >
         <img src={rock} alt="" className="w-full md:w-1/4 lg:w-1/5 xl:w-1/6" />
+        {showVideo ? "" : ""}
         <img src={women} alt="" className="w-full md:w-1/2 lg:w-2/3" />
         <img
           src={rock}
@@ -93,6 +103,15 @@ const Distrib = ({ products }) => {
           className="w-full md:w-1/4 lg:w-1/5 xl:w-1/6 rotate-180 -mr-[100px]"
         />
       </div>
+      {/* {showVideo && (
+        <video controls autoPlay
+          src="https://www.w3schools.com/html/mov_bbb.mp4" 
+          className="w-full h-full"
+          type="video/mp4" >
+          Your browser does not support the video tag.
+        </video>
+      )} */}
+
       <div className="md:mt-[100px] flex justify-center flex-col items-center md:gap-10">
         <h1 className="font-[SunrollBold] text-[#CECECC] leading-[82px] text-4xl md:text-[68px] mb-[20px] md:mb-[40px]">
           MI

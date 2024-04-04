@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+export const handleWhatsapp = () => {
+  window.open("whatsapp://send?phone=+573043049174");
+};
 const quotes = [
   {
     text: "Solté la furia de mi accidente al entender su motivo y me dijeron mis ángeles que iba a estar bien.",
@@ -55,10 +58,6 @@ const quotes2 = [
 
 const Dudas = () => {
   const [currentQuoteIndex, setCurrentQuoteIndex] = useState(0);
-
-  const handleWhatsapp = () => {
-    window.open("whatsapp://send?phone=+573043049174");
-  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -131,6 +130,7 @@ const Dudas = () => {
         </Link>
         <p className="bg-black px-4 p-2 text-lg text-[#CECECC] text-center w-full">
           ENVÍO GRATIS - ORDEN MÍNIMA DE $2,000 - OFRECEMOS TODOS LOS MÉTODOS DE
+          PAGO DE MERCADOPAGO
         </p>
         <h2 className="font-[SunrollBold] sm:leading-[80px] tracking-[1px] mt-[20px] text-[#323233] text-center text-[30px] sm:text-[68px]">
           DIS<span className="text-gray-300">TRI</span>BU
@@ -144,11 +144,11 @@ const Dudas = () => {
         </Link>
         <div className="flex items-center sm:flex-nowrap flex-wrap justify-center p-4 gap-3 w-full bg-black">
           <p className="tracking-[2px] text-[#CECECC] sm:text-lg text-[#CECECC] text-center">
-            CONTACTE
+            CONTACTO NOS
           </p>
           <p className="tracking-[2px] flex gap-2 text-[#CECECC] text-lg text-[#CECECC] text-center">
             <FaWhatsapp size={30} />
-            +52 55 2799
+            +52 5527994821
           </p>
           <button
             className="tracking-[1px] text-[#323233] bg-white pt-2 pb-1 px-3"

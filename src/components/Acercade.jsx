@@ -100,9 +100,9 @@ const Acercade = () => {
               </p>
             </div>
             <p className="max-w-[550px] text-[18px] text-[#000]">
-              *<span className="text-[#CACAC8]">Dato curioso</span>: Fué vuelta
+              * <span className="text-[#CACAC8]">Dato curioso</span>: Fué vuelta
               ilegal en 1973 precisamente porque libera la mente de sistemas de
-              pensar que atan
+              pensar que atan.
             </p>
           </div>
         </div>
