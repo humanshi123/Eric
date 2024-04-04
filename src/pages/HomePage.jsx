@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Cart from "../components/Cart";
 import product1 from "../assets/hero-section/micro-product.webp";
 import coca from "../assets/products/coca.png";
+import imgg from "../assets/products/MICCACAO.webp"
 import zpurple from "../assets/products/zpurple.png";
 import zblack from "../assets/products/zblack.png";
 import zgold from "../assets/products/zgold.png";
@@ -28,7 +29,7 @@ export default function HomePage() {
 
     {
       id: 2,
-      img: coca,
+      img: imgg,
       title: "CACAO DORADO (KETO VEGANO)",
       detail: "Caja de 30 sobres con 0.33g (10g) por sobre",
       btnText: "AÑADIR",
