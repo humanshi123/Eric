@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export const handleWhatsapp = () => {
   window.open("whatsapp://send?phone=+573043049174");
@@ -142,7 +143,7 @@ const Dudas = () => {
         >
           ÚNASE
         </Link>
-        <div className="flex items-center sm:flex-nowrap flex-wrap justify-center p-4 gap-3 w-full bg-black">
+        {/* <div className="flex items-center sm:flex-nowrap flex-wrap justify-center p-4 gap-3 w-full bg-black">
           <p className="tracking-[2px] text-[#CECECC] sm:text-lg text-[#CECECC] text-center">
             CONTACTO NOS
           </p>
@@ -156,7 +157,8 @@ const Dudas = () => {
           >
             ABRIR WHATSAPP
           </button>
-        </div>
+        </div> */}
+        <Footer />
       </div>
     </div>
   );

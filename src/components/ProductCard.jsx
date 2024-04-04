@@ -36,7 +36,7 @@ const ProductCard = ({ id, img, title, detail, price, btnText }) => {
               add(id);
             }}
           >
-            <p className="text-white justify-self-center">{price}</p>
+            <p className="text-white justify-self-center">${price}</p>
             <p className="text-[#323233] sm:text-[22px] px-5 bg-white">
               {btnText}
             </p>
