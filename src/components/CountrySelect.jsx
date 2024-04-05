@@ -41,7 +41,7 @@ const CountrySelect = () => {
           htmlFor="country"
           className="w-[40%] text-right text-[#323233] md:text-[30px]"
         >
-          Estado
+          ESTADO
         </label>
         <Select
           className="w-[60%]"

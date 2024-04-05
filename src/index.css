@@ -5325,3 +5325,29 @@ textarea:focus {
 .country-list li {
   color: #323233;
 }
+.number-list li button {
+  border: 1px solid #323233;
+  color: #CACAC8;
+}
+.text-data p, .grey-section p {
+  color: #CACAC8;
+  font-size: 26px;
+  font-family: "Claston";
+}
+.image-text-grids img, .left-grid, .image-text-grids p {
+  width: 100%;
+}
+.image-text-grids img {
+  max-height: 500px;
+}
+.image-text-grids p {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 767px){
+  .text-data p, .grey-section p {
+  font-size: 16px;
+}
+
+}

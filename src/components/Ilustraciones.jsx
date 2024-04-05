@@ -29,7 +29,7 @@ const Ilustraciones = () => {
         </h1>
       </div>
       <div className="bg-[#f9f9f6] gap-5 md:gap-10 text-gray-400 text-lg md:text-xl flex flex-col justify-center items-center p-5 md:p-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:px-[100px] gap-5 md:gap-10">
           {[
             Zobrez1,
             Zobrez2,

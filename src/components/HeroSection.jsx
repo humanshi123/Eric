@@ -6,13 +6,14 @@ import macroGold from "../assets/hero-section/MAC GOLDEN CACAO.webp";
 import macroLemon from "../assets/hero-section/MAC LEMON.webp";
 import microCacao from "../assets/hero-section/MIC CACAO.webp";
 import microVanilla from "../assets/hero-section/MIC VANILLA.webp";
+import microPro from "../assets/hero-section/micro-product.webp";
 import rightHorse from "../assets/hero-section/right-horse.svg";
 import leftHorse from "../assets/hero-section/left-horse.svg";
 import CloseIcon from "./CloseIcon";
 
 const HeroSection = () => {
-  const microImages = [microCacao, microVanilla];
-  const macroImages = [macroChoco, macroCinamon, macroGold, macroLemon];
+  const microImages = [microCacao, microVanilla, microPro];
+  const macroImages = [macroChoco, macroCinamon, macroGold];
 
   const [currentMacroIndex, setCurrentMacroIndex] = useState(0);
   const [currentMicroIndex, setCurrentMicroIndex] = useState(0);
@@ -36,7 +37,7 @@ const HeroSection = () => {
 
     const microInterval = setInterval(() => {
       setCurrentMicroIndex((prevIndex) => (prevIndex + 1) % microImages.length);
-    }, 5000);
+    }, 3000);
 
     return () => {
       clearInterval(macroInterval);

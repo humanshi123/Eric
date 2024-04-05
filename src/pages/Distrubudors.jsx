@@ -35,7 +35,7 @@ export default function Distrubudors() {
         <div className="mb-20">
           <div className="flex justify-center p-2 mt-5 items-center">
             <h1 className="text-[#CACAC8] text-[24px] bg-gruu  text-center">
-              INGRESE Y PUBLIQUE SUS DATOS DE
+              INGRESE Y PUBLIQUE SUS DATOS
             </h1>
             <button
               className="bg-[#323233] text-[#CACAC8]  py-2 px-5 mx-3"
@@ -71,7 +71,7 @@ export default function Distrubudors() {
                   <li className="text-[#CACAC8] ">+52 5527994821</li>
                   <li>
                     <button
-                      className="bg-[#323233] px-4 py-2 text-white"
+                      className="px-4 py-2 "
                       onClick={handleWhatsapp}
                     >
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
@@ -85,7 +85,7 @@ export default function Distrubudors() {
                   <li className="text-[#CACAC8] ">+52 55 27998283</li>
                   <li>
                     <button
-                      className="bg-[#323233] px-4 py-2 text-white"
+                      className="px-4 py-2 "
                       onClick={handleWhatsapp}
                     >
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
@@ -100,7 +100,7 @@ export default function Distrubudors() {
                   <li className="text-[#CACAC8] ">+52 55 27994821</li>
                   <li>
                     <button
-                      className="bg-[#323233] px-4 py-2 text-white "
+                      className="px-4 py-2"
                       onClick={handleWhatsapp}
                     >
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
@@ -128,7 +128,7 @@ export default function Distrubudors() {
                 <ul className="number-list flex-start flex-col gap-14">
                   <li>
                     <button
-                      className="bg-[#323233] px-4 py-2 text-white "
+                      className="px-4 py-2"
                       onClick={handleWhatsapp}
                     >
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
@@ -159,10 +159,10 @@ export default function Distrubudors() {
                   <li className="text-[#CACAC8] ">+52 55 27994821</li>
                   <li className="text-[#CACAC8] ">+52 55 27994821</li>
                 </ul>
-                <ul className="flex-start flex-col gap-3">
+                <ul className="flex-start number-list flex-col gap-3">
                   <li>
                     <button
-                      className="bg-[#323233] px-4 py-2 text-white "
+                      className="px-4 py-2"
                       onClick={handleWhatsapp}
                     >
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
@@ -171,7 +171,7 @@ export default function Distrubudors() {
                   </li>
                   <li>
                     <button
-                      className="bg-[#323233] px-4 py-2 text-white "
+                      className="px-4 py-2 "
                       onClick={handleWhatsapp}
                     >
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
@@ -180,7 +180,7 @@ export default function Distrubudors() {
                   </li>
                   <li>
                     <button
-                      className="bg-[#323233] px-4 py-2 text-white "
+                      className="px-4 py-2 "
                       onClick={handleWhatsapp}
                     >
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>

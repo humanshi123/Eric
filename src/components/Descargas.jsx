@@ -3,7 +3,7 @@ import Download from "./Download";
 import LaManita from "../assets/pdfs/La Manita Preguntas Frecuentes .pdf";
 import cited from "../assets/pdfs/CITED FAQ ABOUT PSILOCYBIN.pdf";
 import protocol from "../assets/pdfs/PROTOCOLO DE MICRODOSIS DE PAUL STAMETS.pdf";
-import pdf1 from "../assets/pdfs/La Manita Protocolo Stamets.pdf";
+import pdf1 from "../assets/Ventajas/VideoLamanita.mp4";
 // import illustraciones from "../assets/file.zip";
 
 const Descargas = () => {
@@ -17,11 +17,11 @@ const Descargas = () => {
       file: protocol,
     },
     {
-      name: "CITED FAQ ABOUT PSILOCYBIN (PDF)",
+      name: "IMÁGENES ILUSTRATIVAS PARA INSTAGRAM (JPG)",
       file: cited,
     },
     {
-      name: "La Manita Protocolo Stamets (PDF)",
+      name: "VIDEO DEMOSTRANDO EL PRODUCTO Y SUS USOS (MP4)",
       file: pdf1,
     },
     // {
@@ -56,11 +56,11 @@ const Descargas = () => {
           {files.map((file, index) => (
             <DownloadItem title={file.name} file={file.file} key={index} />
           ))}
-          <DownloadItem
+          {/* <DownloadItem
             title={"IMÁGENES ILUSTRATIVAS PARA INSTAGRAM (Zip"}
             key={"zip"}
             handler={downloadZip}
-          />
+          /> */}
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ const DownloadItem = ({ title, file, handler }) => (
   <a
     onClick={handler}
     href={file}
-    className="flex text-gray-300 gap-10 items-center"
+    className="flex text-gray-300 gap-10 md:text-[22px] items-center"
     download // Add download attribute to make the link downloadable
   >
     <span className="">

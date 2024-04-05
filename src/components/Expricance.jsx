@@ -7,6 +7,7 @@ import Artboard28 from "../assets/Descargas/Artboard 28.png";
 import Artboard29 from "../assets/Descargas/Artboard 29.png";
 import Artboard30 from "../assets/Descargas/Artboard 30.png";
 import Artboard31 from "../assets/Descargas/Artboard 31.png";
+import Footer from "./Footer";
 
 const Expricance = () => {
   const images = [
@@ -56,52 +57,49 @@ const Expricance = () => {
         </h1>
       </div>
       <div className="hidden sm:block">
-        <div className="flex-col flex-center gap-20 mb-20">
-          <div className="grid grid-cols-2 gap-10">
-            <img
-              src={Artboard25}
-              className=""
-              alt="illustration"
-              width={500}
-              height={500}
-            />
-            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+        <div className="flex-col flex-center mb-20 md:px-[50px] px-[20px] ">
+          <div className="image-text-grids md:px-[60px] grid grid-cols-2 items-center justify-items-center">
+            <div className="left-grid">
+              <img src={Artboard25} className="" alt="illustration" />
+            </div>
+
+            <p className="text-white bg-[#323233] text-center text-[32px] leading-snug">
               LA NUEVA IGLE SIA FAMILIAR
             </p>
-          </div>
-          <div className="grid grid-cols-2 gap-10">
-            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+            <p className="text-white bg-[#323233] text-center text-[32px] leading-snug">
               RENACE CON ASOMBRO
             </p>
-            <img src={Artboard26} alt="illustration" width={500} height={500} />
-          </div>
-          <div className="grid grid-cols-2 gap-10">
-            <img src={Artboard27} alt="illustration" width={500} height={500} />
-            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+            <div className="left-grid">
+              <img src={Artboard26} alt="illustration" />
+            </div>
+            <div className="left-grid">
+              <img src={Artboard27} alt="illustration" />
+            </div>
+            <p className="text-white bg-[#323233] text-center text-[32px] leading-snug">
               COMPARTE EN INTIMIDAD
             </p>
-          </div>
-          <div className="grid grid-cols-2 gap-10">
-            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+            <p className="text-white bg-[#323233] text-center text-[32px] leading-snug">
               PERCIBLE LA NATURALEZA EN TODO SU EXPLENDOR
             </p>
-            <img src={Artboard28} alt="illustration" width={500} height={500} />
-          </div>
-          <div className="grid grid-cols-2 gap-10">
-            <img src={Artboard29} alt="illustration" width={500} height={500} />
-            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+            <div className="left-grid">
+              <img src={Artboard28} alt="illustration" />
+            </div>
+            <div className="left-grid">
+              <img src={Artboard29} alt="illustration" />
+            </div>
+            <p className="text-white bg-[#323233] text-center text-[32px] leading-snug">
               NO VUELVAS A DUDAR QUE ERES PARTE DE ALGO INFINITO
             </p>
-          </div>
-          <div className="grid grid-cols-2 gap-10">
-            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+            <p className="text-white bg-[#323233] text-center text-[32px] leading-snug">
               FÁCILMENTE ANCLA NUEVOS PATRONES DE CONDUCTA
             </p>
-            <img src={Artboard30} alt="illustration" width={500} height={500} />
-          </div>
-          <div className="grid grid-cols-2 gap-10">
-            <img src={Artboard31} alt="illustration" width={500} height={500} />
-            <p className="text-white bg-[#323233] text-center w-[500px] h-[500px] flex-center text-[32px] leading-snug">
+            <div className="left-grid">
+              <img src={Artboard30} alt="illustration" />
+            </div>
+            <div className="left-grid">
+              <img src={Artboard31} alt="illustration" />
+            </div>
+            <p className="text-white bg-[#323233] text-center text-[32px] leading-snug">
               VUELVETE CAPAZ DE DECIR LO NECESARIO
             </p>
           </div>
@@ -139,16 +137,17 @@ const Expricance = () => {
               <span className="text-white uppercase">Clmient</span>OS
             </h1>
           </div>
-          <div className="flex flex-col p-20 text-lg text-gray-400 gap-5 items-center justify-center">
+          <div className="grey-section flex flex-col p-20 text-lg text-gray-400 gap-4 items-center justify-center">
             <p>CEPAS Y POTENCIA LOGRADA</p>
             <p>PRIMER LUGAR EN EXPO WEED 2023</p>
             <p>ARTÍCULO EN CAÑAMO 2024</p>
           </div>
         </div>
-        <p className="bg-black flex items-center justify-center gap-2 md:gap-5 text-lg md:text-xl p-2 w-full text-white text-center">
+        {/* <p className="bg-black flex items-center justify-center gap-2 md:gap-5 text-lg md:text-xl p-2 w-full text-white text-center">
           CONTACTE +52 55 2799 ABRIR WHATSAPP
           <FaWhatsapp size={30} />
-        </p>
+        </p> */}
+        <Footer />
       </div>
     </div>
   );

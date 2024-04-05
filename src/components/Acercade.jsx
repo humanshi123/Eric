@@ -4,7 +4,7 @@ import LaManita from "../assets/pdfs/La Manita Preguntas Frecuentes .pdf";
 // import cited from "../assets/pdfs/CITED FAQ ABOUT PSILOCYBIN.pdf";
 import protocol from "../assets/pdfs/PROTOCOLO DE MICRODOSIS DE PAUL STAMETS.pdf";
 import cited from "../assets/pdfs/CITED FAQ ABOUT PSILOCYBIN.pdf";
-import pdf1 from "../assets/pdfs/La Manita Protocolo Stamets.pdf";
+import LamanitaVIdeo from "../assets/Ventajas/VideoLamanita.mp4";
 
 import { useRef, useState } from "react";
 import Download from "./Download";
@@ -58,7 +58,7 @@ const Acercade = () => {
     },
     {
       name: "VIDEO DEMOSTRANDO EL PRODUCTO Y SUS USOS",
-      file: pdf1,
+      file: LamanitaVIdeo,
       typ: "(MP4)",
     },
   ];
@@ -136,7 +136,8 @@ const Acercade = () => {
         <div className="fixed top-0 z-30 left-0 w-[100%] h-[100%] flex items-center justify-center bg-black bg-opacity-75">
           <video
             ref={video}
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            src={LamanitaVIdeo}
+            // src="https://www.w3schools.com/html/mov_bbb.mp4"
             controls
             autoPlay // Add autoPlay attribute
             className="w-full h-full"

@@ -10,8 +10,8 @@ const Pasos = () => {
           <span className="text-white uppercase"></span>
         </h1>
       </div>
-      <div className="bg-[#f9f9f6] gap-5 md:gap-10 text-gray-400 text-lg md:text-xl flex flex-col justify-center items-center p-10 md:p-20">
-        <p className="w-full md:w-[80%]">
+      <div className="text-data bg-[#f9f9f6] gap-3 md:gap-10 text-gray-400 text-lg md:text-xl flex flex-col justify-center items-center p-10 md:p-20">
+        <p className="w-full text-[#CACAC8] md:w-[80%]">
           1 . TERAPIA EN CONJUNTO CON MICRODÓSIS PRODUCE CAMBIOS RÁPIDOS.
         </p>
         <p className="w-full md:w-[80%]">

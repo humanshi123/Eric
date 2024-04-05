@@ -3,6 +3,7 @@ import rock from "../assets/Ventajas/rock.svg";
 import CloseIcon from "./CloseIcon";
 import ProductCard from "./ProductCard";
 import { useRef, useState } from "react";
+import LamanitaVIdeo from "../assets/Ventajas/VideoLamanita.mp4";
 
 const Distrib = ({ products }) => {
   const [showVideo, setShowVideo] = useState(false);
@@ -89,8 +90,8 @@ const Distrib = ({ products }) => {
   // ];
 
   return (
-    <div className="flex flex-col gap-10 py-6">
-      <div
+    <div className="flex flex-col gap-10 pb-6">
+      {/* <div
         className="hidden md:flex  justify-between overflow-hidden"
         onClick={handleVideoPlay}
       >
@@ -102,15 +103,19 @@ const Distrib = ({ products }) => {
           alt=""
           className="w-full md:w-1/4 lg:w-1/5 xl:w-1/6 rotate-180 -mr-[100px]"
         />
-      </div>
-      {/* {showVideo && (
-        <video controls autoPlay
-          src="https://www.w3schools.com/html/mov_bbb.mp4" 
-          className="w-full h-full"
-          type="video/mp4" >
-          Your browser does not support the video tag.
-        </video>
-      )} */}
+      </div> */}
+      {/* {showVideo && ( */}
+      <video
+        controls
+        autoPlay
+        // src="https://www.w3schools.com/html/mov_bbb.mp4"
+        src={LamanitaVIdeo}
+        className="w-full h-full"
+        type="video/mp4"
+      >
+        Your browser does not support the video tag.
+      </video>
+      {/* )} */}
 
       <div className="md:mt-[100px] flex justify-center flex-col items-center md:gap-10">
         <h1 className="font-[SunrollBold] text-[#CECECC] leading-[82px] text-4xl md:text-[68px] mb-[20px] md:mb-[40px]">
