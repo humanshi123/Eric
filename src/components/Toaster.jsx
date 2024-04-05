@@ -7,7 +7,7 @@ export default function Toaster({ duration, text, visible, end }) {
     setTimeout(() => {
       console.log("toaster closed");
       end();
-    }, 33000);
+    }, 3000);
   }, [visible]);
 
   return (
