@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
+
 export const handleWhatsapp = () => {
   window.open("whatsapp://send?phone=+573043049174");
 };
@@ -138,26 +139,13 @@ const Dudas = () => {
           <span className="text-gray-300">DOR</span>?
         </h2>
         <Link
-          to={"/distributors"}
+          to="/Faq"
           className=" mt-3 mb-3 p-2 text-sm sm:text-xl bg-[#323233] text-[#fff] text-center"
         >
           ÚNASE
         </Link>
-        {/* <div className="flex items-center sm:flex-nowrap flex-wrap justify-center p-4 gap-3 w-full bg-black">
-          <p className="tracking-[2px] text-[#CECECC] sm:text-lg text-[#CECECC] text-center">
-            CONTACTO NOS
-          </p>
-          <p className="tracking-[2px] flex gap-2 text-[#CECECC] text-lg text-[#CECECC] text-center">
-            <FaWhatsapp size={30} />
-            +52 5527994821
-          </p>
-          <button
-            className="tracking-[1px] text-[#323233] bg-white pt-2 pb-1 px-3"
-            onClick={handleWhatsapp}
-          >
-            ABRIR WHATSAPP
-          </button>
-        </div> */}
+    
+
         <Footer />
       </div>
     </div>

@@ -5345,9 +5345,18 @@ textarea:focus {
   display: grid;
   place-items: center;
 }
+.faq-wrapper h2{
+  color: #000;
+  font-size: 20px;
+  margin: 10px 0 24px;
+  text-align: center;
+}
 @media (max-width: 767px){
   .text-data p, .grey-section p {
   font-size: 16px;
 }
-
+.faq-wrapper h2 {
+  font-size: 18px;
+  margin: 0px 0 15px;
+}
 }

@@ -7,6 +7,8 @@ import "./Distribudors.css";
 import { FaWhatsapp } from "react-icons/fa";
 import FormData from "../components/FormData";
 import Footer from "../components/Footer";
+import Cart from "../components/Cart";
+import { products } from "../context/siteStore";
 
 export default function Distrubudors() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -22,10 +24,17 @@ export default function Distrubudors() {
   const handleWhatsapp = () => {
     window.open("whatsapp://send?phone=+573043049174");
   };
+  const [showCart, setShowCart] = useState(false);
+
+  const toggleCart = () => {
+    setShowCart(!showCart);
+  };
   return (
     <div>
       <div className="halfbg fixed w-full">
-        <Navbar />
+        <Navbar toggleCart={toggleCart} />
+
+        {showCart && <Cart toggleHandle={toggleCart} products={products} />}
       </div>
       <div className="intro2 flex-center">
         <Map />
@@ -70,10 +79,7 @@ export default function Distrubudors() {
                   <li>ERIC HADDAD KOENIG</li>
                   <li className="text-[#CACAC8] ">+52 5527994821</li>
                   <li>
-                    <button
-                      className="px-4 py-2 "
-                      onClick={handleWhatsapp}
-                    >
+                    <button className="px-4 py-2 " onClick={handleWhatsapp}>
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
                       <FaWhatsapp className="sm:hidden" size={30} />
                     </button>
@@ -84,10 +90,7 @@ export default function Distrubudors() {
                   <li>PALACE VAPE SHOP...</li>
                   <li className="text-[#CACAC8] ">+52 55 27998283</li>
                   <li>
-                    <button
-                      className="px-4 py-2 "
-                      onClick={handleWhatsapp}
-                    >
+                    <button className="px-4 py-2 " onClick={handleWhatsapp}>
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
                       <FaWhatsapp className="sm:hidden" size={30} />
                     </button>
@@ -99,10 +102,7 @@ export default function Distrubudors() {
 
                   <li className="text-[#CACAC8] ">+52 55 27994821</li>
                   <li>
-                    <button
-                      className="px-4 py-2"
-                      onClick={handleWhatsapp}
-                    >
+                    <button className="px-4 py-2" onClick={handleWhatsapp}>
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
                       <FaWhatsapp className="sm:hidden" size={30} />
                     </button>
@@ -127,10 +127,7 @@ export default function Distrubudors() {
                 </ul>
                 <ul className="number-list flex-start flex-col gap-14">
                   <li>
-                    <button
-                      className="px-4 py-2"
-                      onClick={handleWhatsapp}
-                    >
+                    <button className="px-4 py-2" onClick={handleWhatsapp}>
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
                       <FaWhatsapp className="sm:hidden" size={30} />
                     </button>
@@ -161,28 +158,19 @@ export default function Distrubudors() {
                 </ul>
                 <ul className="flex-start number-list flex-col gap-3">
                   <li>
-                    <button
-                      className="px-4 py-2"
-                      onClick={handleWhatsapp}
-                    >
+                    <button className="px-4 py-2" onClick={handleWhatsapp}>
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
                       <FaWhatsapp className="sm:hidden" size={30} />
                     </button>
                   </li>
                   <li>
-                    <button
-                      className="px-4 py-2 "
-                      onClick={handleWhatsapp}
-                    >
+                    <button className="px-4 py-2 " onClick={handleWhatsapp}>
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
                       <FaWhatsapp className="sm:hidden" size={30} />
                     </button>
                   </li>
                   <li>
-                    <button
-                      className="px-4 py-2 "
-                      onClick={handleWhatsapp}
-                    >
+                    <button className="px-4 py-2 " onClick={handleWhatsapp}>
                       <span className="hidden sm:block">ABRIR WHATSAPP</span>
                       <FaWhatsapp className="sm:hidden" size={30} />
                     </button>

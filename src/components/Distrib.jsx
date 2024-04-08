@@ -107,7 +107,6 @@ const Distrib = ({ products }) => {
       {/* {showVideo && ( */}
       <video
         controls
-        autoPlay
         // src="https://www.w3schools.com/html/mov_bbb.mp4"
         src={LamanitaVIdeo}
         className="w-full h-full"

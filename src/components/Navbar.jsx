@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
-
 import logo from "../assets/navbar/logo.svg";
 import { useSiteStore } from "../context/siteStore";
 import CartIcon from "./CartIcon";
@@ -41,7 +40,9 @@ export default function Navbar({ toggleCart }) {
         <Link className="text-[#CECECC] font-[Claston] text-[14px]">
           Ventajas
         </Link>
-        <Link className="text-[#CECECC] font-[Claston] text-[14px]">
+        <Link className="text-[#CECECC] font-[Claston] text-[14px]"
+      
+        >
           Productos
         </Link>
         <Link
