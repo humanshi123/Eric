@@ -5351,6 +5351,12 @@ textarea:focus {
   margin: 10px 0 24px;
   text-align: center;
 }
+.main-faq {
+  background-image: url(/src/assets/hero-section/bg.png);
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: 80%;
+}
 @media (max-width: 767px){
   .text-data p, .grey-section p {
   font-size: 16px;
