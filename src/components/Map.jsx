@@ -2,7 +2,7 @@ import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 const MapContainer = () => {
   const mapStyles = {
-    height: "200px",
+    height: "70vh",
     width: "100%",
   };
 

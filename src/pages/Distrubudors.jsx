@@ -31,12 +31,9 @@ export default function Distrubudors() {
   };
   return (
     <div>
-      <div className="halfbg fixed w-full">
         <Navbar toggleCart={toggleCart} />
-
         {showCart && <Cart toggleHandle={toggleCart} products={products} />}
-      </div>
-      <div className="intro2 relative  flex-center">
+      <div className="intro2 relative flex-center">
         <Map />
       </div>
       <div>

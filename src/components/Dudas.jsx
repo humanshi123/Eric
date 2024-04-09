@@ -125,7 +125,7 @@ const Dudas = () => {
           DU<span className="text-gray-300">D</span>AS?
         </h2>
         <Link
-          to={"/distributors"}
+          to="/Faq"
           className=" mt-3 mb-3 p-2 text-sm sm:text-xl bg-[#323233] text-[#fff] text-center "
         >
           INFÓRMESE
@@ -139,7 +139,7 @@ const Dudas = () => {
           <span className="text-gray-300">DOR</span>?
         </h2>
         <Link
-          to="/Faq"
+          to={"/distributors"}
           className=" mt-3 mb-3 p-2 text-sm sm:text-xl bg-[#323233] text-[#fff] text-center"
         >
           ÚNASE
