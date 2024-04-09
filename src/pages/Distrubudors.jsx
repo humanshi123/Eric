@@ -36,9 +36,8 @@ export default function Distrubudors() {
 
         {showCart && <Cart toggleHandle={toggleCart} products={products} />}
       </div>
-      <div className="intro2 flex-center">
+      <div className="intro2 relative  flex-center">
         <Map />
-        {/* <MapContainer /> */}
       </div>
       <div>
         <div className="mb-20">

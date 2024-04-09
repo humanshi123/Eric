@@ -1,22 +1,18 @@
-
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 const MapContainer = () => {
-    const apiKey = import.meta.env.REACT_APP_MAP_KEY;
   const mapStyles = {
-    height: "50vh",
-    width: "100%"
+    height: "200px",
+    width: "100%",
   };
 
   const defaultCenter = {
     lat: 23.6345,
-    lng: 102.5528
+    lng: 102.5528,
   };
 
   return (
-    <LoadScript
-      googleMapsApiKey={apiKey}
-    >
+    <LoadScript googleMapsApiKey="AIzaSyAUYivQoC2SKspse0tQh17SsiyDe6E92QU">
       <GoogleMap
         mapContainerStyle={mapStyles}
         zoom={100}
